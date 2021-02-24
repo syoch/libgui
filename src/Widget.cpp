@@ -1,5 +1,9 @@
 #include <Widget.hpp>
 
+gui::Widget::Widget()
+    : pos((Point){0, 0}), size((Size){0, 0})
+{
+}
 void gui::Widget::draw_line(Point start, Point end)
 {
 }

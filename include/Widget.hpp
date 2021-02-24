@@ -14,6 +14,7 @@ namespace gui
         Size size;
 
     public:
+        Widget();
         Widget(int x, int y, int w, int h);
 
         virtual void onTouch(int x, int y);
