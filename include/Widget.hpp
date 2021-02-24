@@ -3,6 +3,7 @@
 #define LIBGUI_WIDGET
 #include "Point.hpp"
 #include "Size.hpp"
+#include <inttypes.h>
 
 namespace gui
 {
@@ -16,7 +17,7 @@ namespace gui
         Widget(int x, int y, int w, int h);
 
         virtual void onTouch(int x, int y);
-        virtual void onButton(int x, int y);
+        virtual void onButton(uint32_t key);
 
         void draw_line(Point start, Point end);
         void draw_rect(Point start, Point end);
