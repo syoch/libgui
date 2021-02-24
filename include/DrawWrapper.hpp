@@ -1,6 +1,6 @@
 #pragma once
-#ifndef LIBGUI_CONTAINER
-#define LIBGUI_CONTAINER
+#ifndef LIBGUI_DRAW_WRAPPER
+#define LIBGUI_DRAW_WRAPPER
 
 #include <vector>
 #include "Widget.hpp"
