@@ -15,8 +15,8 @@ namespace gui
     public:
         Widget(int x, int y, int w, int h);
 
-        void onTouch(int x, int y);
-        void onButton(int x, int y);
+        virtual void onTouch(int x, int y);
+        virtual void onButton(int x, int y);
 
         void draw_line(Point start, Point end);
         void draw_rect(Point start, Point end);
