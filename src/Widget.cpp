@@ -8,6 +8,7 @@ gui::Widget::Widget(int x, int y, int w, int h)
     : pos((Point){x, y}), size((Size){w, h})
 {
 }
+gui::Widget::~Widget() {}
 void gui::Widget::draw_line(Point start, Point end)
 {
 }
