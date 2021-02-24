@@ -16,6 +16,7 @@ namespace gui
     public:
         Widget();
         Widget(int x, int y, int w, int h);
+        ~Widget();
 
         virtual void onTouch(int x, int y);
         virtual void onButton(uint32_t key);
