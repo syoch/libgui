@@ -4,8 +4,7 @@
 
 #include <inttypes.h>
 
-#include "Point.hpp"
-#include "Size.hpp"
+#include "Types.hpp"
 
 namespace gui
 {

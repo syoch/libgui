@@ -1,8 +1,7 @@
 #pragma once
 #ifndef LIBGUI_WIDGET
 #define LIBGUI_WIDGET
-#include "Point.hpp"
-#include "Size.hpp"
+#include "Types.hpp"
 #include <inttypes.h>
 
 namespace gui

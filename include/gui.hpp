@@ -1,5 +1,4 @@
-#include "Point.hpp"
-#include "Size.hpp"
+#include "Types.hpp"
 #include "DrawWrapper.hpp"
 #include "Widget.hpp"
 #include "Container.hpp"
