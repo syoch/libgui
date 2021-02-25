@@ -12,7 +12,7 @@ namespace gui
         Container super;
 
     public:
-        Widget(gui::Container _super, int x, int y, int w, int h);
+        Widget(gui::Container &_super, int x, int y, int w, int h);
     };
 }
 
