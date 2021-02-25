@@ -4,6 +4,11 @@
 
 namespace gui
 {
+    struct Point
+    {
+        int x;
+        int y;
+    };
     struct Size
     {
         int width;
