@@ -7,6 +7,7 @@
 
 namespace gui
 {
+    const bool isRelative;
     void draw_line(Point start, Point end);
     void draw_rect(Point start, Point end);
     void draw_triangle(Point A, Point B, Point C);
