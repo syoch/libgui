@@ -19,6 +19,9 @@ namespace gui
     void WidgetBase::draw_text(int row, int column, char *)
     {
     }
+    void WidgetBase::draw_translate(int x, int y)
+    {
+    }
     void WidgetBase::draw()
     {
     }
