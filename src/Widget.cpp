@@ -1,7 +1,8 @@
 #include <Widget.hpp>
 
-gui::Widget::Widget(int x, int y, int w, int h)
+gui::Widget::Widget(gui::Container _super, int x, int y, int w, int h)
 {
+    super = _super;
     pos = ((Point){x, y});
     size = ((Size){w, h});
 }

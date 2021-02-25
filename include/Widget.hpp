@@ -2,13 +2,16 @@
 #ifndef LIBGUI_WIDGET
 #define LIBGUI_WIDGET
 #include <WidgetBase.hpp>
-
+#include <Container.hpp>
 namespace gui
 {
     class Widget : public WidgetBase
     {
+    private:
+        Container super;
+
     public:
-        Widget(int x, int y, int w, int h);
+        Widget(gui::Container _super, int x, int y, int w, int h);
     };
 }
 
