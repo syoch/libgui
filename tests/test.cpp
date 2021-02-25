@@ -3,10 +3,10 @@
 using namespace gui;
 int main(int argc, char const *argv[])
 {
-    Container root;
+    Root root;
 
-    root.pushWidget(Widget(0, 0, 100, 100));
+    Widget(root, 0, 0, 100, 100);
 
-    root.draw();
+    root._draw();
     return 0;
 }
