@@ -13,6 +13,7 @@ namespace gui
         std::vector<WidgetBase> childrens;
 
     public:
+        void _draw();
         void pushWidget(WidgetBase widget);
     };
 }
