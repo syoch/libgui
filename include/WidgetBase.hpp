@@ -19,7 +19,7 @@ namespace gui
         void draw();
 
     public:
-        void _draw();
+        virtual void _draw();
         virtual void onTouch(int x, int y);
         virtual void onButton(uint32_t key);
 
