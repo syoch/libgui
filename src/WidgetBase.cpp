@@ -7,34 +7,28 @@
 
 namespace gui
 {
-    class WidgetBase
+    void WidgetBase::draw_line(Point start, Point end)
     {
-    private:
-        void draw_line(Point start, Point end)
-        {
-        }
-        void draw_rect(Point start, Point end)
-        {
-        }
-        void draw_triangle(Point A, Point B, Point C)
-        {
-        }
-        void draw_text(int row, int column, char *)
-        {
-        }
-        void draw()
-        {
-        }
-
-    public:
-        void _draw()
-        {
-        }
-        virtual void onTouch(int x, int y)
-        {
-        }
-        virtual void onButton(uint32_t key)
-        {
-        }
-    };
+    }
+    void WidgetBase::draw_rect(Point start, Point end)
+    {
+    }
+    void WidgetBase::draw_triangle(Point A, Point B, Point C)
+    {
+    }
+    void WidgetBase::draw_text(int row, int column, char *)
+    {
+    }
+    void WidgetBase::draw()
+    {
+    }
+    void WidgetBase::_draw()
+    {
+    }
+    void WidgetBase::onTouch(int x, int y)
+    {
+    }
+    void WidgetBase::onButton(uint32_t key)
+    {
+    }
 }
