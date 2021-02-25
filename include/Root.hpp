@@ -4,6 +4,7 @@
 
 #include <vector>
 #include "WidgetBase.hpp"
+#include "Container.hpp"
 
 namespace gui
 {
