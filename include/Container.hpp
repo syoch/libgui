@@ -3,17 +3,17 @@
 #define LIBGUI_CONTAINER
 
 #include <vector>
-#include "Widget.hpp"
+#include "WidgetBase.hpp"
 
 namespace gui
 {
-    class Container : public Widget
+    class Container : public WidgetBase
     {
     private:
-        std::vector<Widget> childrens;
+        std::vector<WidgetBase> childrens;
 
     public:
-        void pushWidget(Widget widget);
+        void pushWidget(WidgetBase widget);
     };
 }
 

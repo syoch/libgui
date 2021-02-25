@@ -1,6 +1,6 @@
 #include <Container.hpp>
 
-void gui::Container::pushWidget(gui::Widget widget)
+void gui::Container::pushWidget(gui::WidgetBase widget)
 {
     childrens.push_back(widget);
 }
