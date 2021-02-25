@@ -15,9 +15,6 @@ void gui::Root::draw_text(int row, int column, char *)
 void gui::Root::draw_translate(int x, int y)
 {
 }
-void gui::Root::draw()
-{
-}
 void gui::Root::onTouch(int x, int y)
 {
 }
