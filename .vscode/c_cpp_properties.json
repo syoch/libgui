@@ -10,7 +10,7 @@
             "defines": [],
             "compilerPath": "/home/syoch/bin/cling/bin/clang",
             "cStandard": "c11",
-            "cppStandard": "c++98",
+            "cppStandard": "c++17",
             "intelliSenseMode": "linux-clang-x64"
         }
     ],
