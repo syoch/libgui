@@ -15,10 +15,9 @@ namespace gui
         void draw_triangle(gui::Point A, gui::Point B, gui::Point C);
         void draw_text(int row, int column, char *);
         void draw_translate(int x, int y);
-        void draw();
 
     public:
-        void _draw();
+        void draw();
         void onTouch(int x, int y);
         void onButton(uint32_t key);
         Root();
