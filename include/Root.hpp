@@ -7,7 +7,7 @@
 
 namespace gui
 {
-    class Root : public WidgetBase
+    class Root : public Container
     {
         void draw_line(gui::Point start, gui::Point end);
         void draw_rect(gui::Point start, gui::Point end);
@@ -21,7 +21,6 @@ namespace gui
         void onTouch(int x, int y);
         void onButton(uint32_t key);
         Root();
-        std::vector<WidgetBase> children;
     };
 }
 
