@@ -27,3 +27,10 @@ void gui::Root::onTouch(int x, int y)
 void gui::Root::onButton(uint32_t key)
 {
 }
+gui::Root::Root()
+{
+    pos.x = 0;
+    pos.y = 0;
+    size.height = 0;
+    size.width = 0;
+}
