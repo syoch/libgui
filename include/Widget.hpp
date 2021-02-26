@@ -2,7 +2,6 @@
 #ifndef LIBGUI_WIDGET
 #define LIBGUI_WIDGET
 #include <WidgetBase.hpp>
-#include <Root.hpp>
 
 namespace gui
 {
