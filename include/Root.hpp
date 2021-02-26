@@ -16,8 +16,6 @@ namespace GUI
         void draw_translate(int x, int y);
 
     public:
-        void onTouch(int x, int y);
-        void onButton(uint32_t key);
         Root();
     };
 }

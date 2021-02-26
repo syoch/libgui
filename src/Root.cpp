@@ -21,12 +21,6 @@ void GUI::Root::draw_translate(int x, int y)
 {
     GUI::draw_translate(x, y);
 }
-void GUI::Root::onTouch(int x, int y)
-{
-}
-void GUI::Root::onButton(uint32_t key)
-{
-}
 GUI::Root::Root()
     : GUI::ContainerBase(0, 0, 0, 0)
 {
