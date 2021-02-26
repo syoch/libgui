@@ -7,11 +7,10 @@
 
 namespace gui
 {
-    class Container : public DisplayableWidget
+    class Container : public WidgetBase
     {
     public:
-        using DisplayableWidget::DisplayableWidget;
-
+        using WidgetBase::WidgetBase;
         void _draw();
 
         std::vector<WidgetBase> childrens;
