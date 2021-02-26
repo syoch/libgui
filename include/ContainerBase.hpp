@@ -11,6 +11,8 @@ namespace GUI
     {
     public:
         using WidgetBase::WidgetBase;
+        void onTouch(int x, int y);
+        void onButton(uint32_t key);
 
         void _draw();
 
