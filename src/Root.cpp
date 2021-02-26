@@ -22,6 +22,6 @@ void gui::Root::onButton(uint32_t key)
 {
 }
 gui::Root::Root()
-    : gui::Container(0, 0, 0, 0)
+    : gui::ContainerBase(0, 0, 0, 0)
 {
 }
