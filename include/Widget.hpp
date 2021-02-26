@@ -10,6 +10,7 @@ namespace gui
     {
     public:
         Widget(gui::Container &_super, int x, int y, int w, int h);
+        Widget(int x, int y, int w, int h);
     };
 }
 
