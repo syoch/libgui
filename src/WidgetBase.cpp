@@ -33,6 +33,11 @@ namespace GUI
     }
     void WidgetBase::_draw()
     {
+        if (isRelative)
+            draw_translate(pos.x, pos.y);
+        draw();
+        if (isRelative)
+            draw_translate(-pos.x, -pos.y);
     }
     void WidgetBase::onTouch(int x, int y)
     {
