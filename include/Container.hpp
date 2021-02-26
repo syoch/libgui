@@ -3,15 +3,14 @@
 #define LIBGUI_CONTAINER
 
 #include <vector>
-#include "WidgetBase.hpp"
-#include "Widget.hpp"
+#include "DisplayableWidget.hpp"
 
 namespace gui
 {
-    class Container : public Widget
+    class Container : public DisplayableWidget
     {
     public:
-        using Widget::Widget;
+        using DisplayableWidget::DisplayableWidget;
 
         void _draw();
 
