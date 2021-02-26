@@ -8,7 +8,7 @@
 
 namespace gui
 {
-    class Container;
+    class ContainerBase;
 
     class WidgetBase
     {
@@ -21,7 +21,7 @@ namespace gui
         void draw();
 
     public:
-        WidgetBase(gui::Container &_super, int x, int y, int w, int h);
+        WidgetBase(gui::ContainerBase &_super, int x, int y, int w, int h);
         WidgetBase(int x, int y, int w, int h);
 
         virtual void _draw();

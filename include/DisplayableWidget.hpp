@@ -7,15 +7,15 @@
 
 namespace gui
 {
-    class Container;
+    class ContainerBase;
 
     class DisplayableWidget : public WidgetBase
     {
-        Container &super;
+        ContainerBase &super;
 
     public:
         using WidgetBase::WidgetBase;
-        DisplayableWidget(Container &super, int x, int y, int w, int h);
+        DisplayableWidget(ContainerBase &super, int x, int y, int w, int h);
     };
 }
 
