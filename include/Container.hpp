@@ -7,15 +7,8 @@
 
 namespace GUI
 {
-    class Container : public ContainerBase
+    class Container : public ContainerBase, public DisplayableWidget
     {
-    private:
-        ContainerBase &super;
-
-    public:
-        Container(GUI::ContainerBase &_super, int x, int y, int w, int h);
-
-        std::vector<WidgetBase> childrens;
     };
 }
 
