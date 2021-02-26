@@ -14,7 +14,6 @@ namespace GUI
 
     public:
         Container(GUI::ContainerBase &_super, int x, int y, int w, int h);
-        void _draw();
 
         std::vector<WidgetBase> childrens;
     };
