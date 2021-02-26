@@ -9,8 +9,11 @@ namespace gui
 {
     class Container : public ContainerBase
     {
+    private:
+        ContainerBase &super;
+
     public:
-        using ContainerBase::ContainerBase;
+        Container(gui::ContainerBase &_super, int x, int y, int w, int h);
         void _draw();
 
         std::vector<WidgetBase> childrens;
