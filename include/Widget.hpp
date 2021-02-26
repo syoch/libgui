@@ -7,6 +7,8 @@ namespace gui
 {
     class Widget : public WidgetBase
     {
+    public:
+        using WidgetBase::WidgetBase;
     };
 }
 
