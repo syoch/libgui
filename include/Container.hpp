@@ -11,7 +11,7 @@ namespace gui
     class Container : public Widget
     {
     public:
-        Container();
+        using Widget::Widget;
 
         void _draw();
 
