@@ -9,7 +9,7 @@ void GUI::Root::draw_rect(GUI::Point start, GUI::Point end)
 void GUI::Root::draw_triangle(GUI::Point A, GUI::Point B, GUI::Point C)
 {
 }
-void GUI::Root::draw_text(int row, int column, char *)
+void GUI::Root::draw_text(int row, int column, char *text)
 {
 }
 void GUI::Root::draw_translate(int x, int y)
