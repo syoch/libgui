@@ -4,12 +4,15 @@
 
 #include <vector>
 #include "WidgetBase.hpp"
+#include "Widget.hpp"
 
 namespace gui
 {
-    class Container : public WidgetBase
+    class Container : public Widget
     {
     public:
+        Container();
+
         void _draw();
 
         std::vector<WidgetBase> childrens;
