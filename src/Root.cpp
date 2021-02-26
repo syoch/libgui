@@ -22,9 +22,6 @@ void gui::Root::onButton(uint32_t key)
 {
 }
 gui::Root::Root()
+    : gui::Container(0, 0, 0, 0)
 {
-    pos.x = 0;
-    pos.y = 0;
-    size.height = 0;
-    size.width = 0;
 }
