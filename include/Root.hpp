@@ -5,13 +5,13 @@
 #include <vector>
 #include "ContainerBase.hpp"
 
-namespace gui
+namespace GUI
 {
     class Root : public ContainerBase
     {
-        void draw_line(gui::Point start, gui::Point end);
-        void draw_rect(gui::Point start, gui::Point end);
-        void draw_triangle(gui::Point A, gui::Point B, gui::Point C);
+        void draw_line(GUI::Point start, GUI::Point end);
+        void draw_rect(GUI::Point start, GUI::Point end);
+        void draw_triangle(GUI::Point A, GUI::Point B, GUI::Point C);
         void draw_text(int row, int column, char *);
         void draw_translate(int x, int y);
 

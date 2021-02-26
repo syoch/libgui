@@ -3,7 +3,7 @@
 #define LIBGUI_WIDGET
 #include <DisplayableWidget.hpp>
 
-namespace gui
+namespace GUI
 {
     class Widget : public DisplayableWidget
     {

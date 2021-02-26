@@ -2,10 +2,10 @@
 #include <DrawWrapper.hpp>
 #include <iostream>
 
-namespace gui
+namespace GUI
 {
     const bool isRelative = true;
-    void draw_line(gui::Point start, gui::Point end)
+    void draw_line(GUI::Point start, GUI::Point end)
     {
         std::wcout << "Draw line:"
                    << "(" << start.x << ", " << start.y << ")"
@@ -14,7 +14,7 @@ namespace gui
                    << std::endl;
     }
 
-    void draw_rect(gui::Point start, gui::Point end)
+    void draw_rect(GUI::Point start, GUI::Point end)
     {
         std::wcout << "Draw rect:"
                    << "(" << start.x << ", " << start.y << ")"
@@ -36,7 +36,7 @@ namespace gui
                    << x << ", " << y
                    << std::endl;
     }
-    void draw_triangle(gui::Point A, gui::Point B, gui::Point C)
+    void draw_triangle(GUI::Point A, GUI::Point B, GUI::Point C)
     {
         std::wcout << "Draw tria:"
                    << "(" << A.x << ", " << A.y << ")"

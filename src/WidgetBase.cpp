@@ -5,7 +5,7 @@
 #include "Types.hpp"
 #include "Container.hpp"
 
-namespace gui
+namespace GUI
 {
     void WidgetBase::draw_line(Point start, Point end)
     {
@@ -34,7 +34,7 @@ namespace gui
     void WidgetBase::onButton(uint32_t key)
     {
     }
-    WidgetBase::WidgetBase(gui::ContainerBase &_super, int x, int y, int w, int h)
+    WidgetBase::WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h)
     {
         pos = ((Point){x, y});
         size = ((Size){w, h});

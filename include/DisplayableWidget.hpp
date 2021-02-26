@@ -5,7 +5,7 @@
 #include <vector>
 #include "WidgetBase.hpp"
 
-namespace gui
+namespace GUI
 {
     class ContainerBase;
 

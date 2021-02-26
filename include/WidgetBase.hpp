@@ -6,7 +6,7 @@
 
 #include "Types.hpp"
 
-namespace gui
+namespace GUI
 {
     class ContainerBase;
 
@@ -21,7 +21,7 @@ namespace gui
         void draw();
 
     public:
-        WidgetBase(gui::ContainerBase &_super, int x, int y, int w, int h);
+        WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h);
         WidgetBase(int x, int y, int w, int h);
 
         virtual void _draw();

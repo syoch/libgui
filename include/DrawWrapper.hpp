@@ -5,7 +5,7 @@
 #include <vector>
 #include "Widget.hpp"
 
-namespace gui
+namespace GUI
 {
     extern const bool isRelative;
     void draw_line(Point start, Point end);

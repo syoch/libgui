@@ -1,27 +1,27 @@
 #include <Root.hpp>
 
-void gui::Root::draw_line(gui::Point start, gui::Point end)
+void GUI::Root::draw_line(GUI::Point start, GUI::Point end)
 {
 }
-void gui::Root::draw_rect(gui::Point start, gui::Point end)
+void GUI::Root::draw_rect(GUI::Point start, GUI::Point end)
 {
 }
-void gui::Root::draw_triangle(gui::Point A, gui::Point B, gui::Point C)
+void GUI::Root::draw_triangle(GUI::Point A, GUI::Point B, GUI::Point C)
 {
 }
-void gui::Root::draw_text(int row, int column, char *)
+void GUI::Root::draw_text(int row, int column, char *)
 {
 }
-void gui::Root::draw_translate(int x, int y)
+void GUI::Root::draw_translate(int x, int y)
 {
 }
-void gui::Root::onTouch(int x, int y)
+void GUI::Root::onTouch(int x, int y)
 {
 }
-void gui::Root::onButton(uint32_t key)
+void GUI::Root::onButton(uint32_t key)
 {
 }
-gui::Root::Root()
-    : gui::ContainerBase(0, 0, 0, 0)
+GUI::Root::Root()
+    : GUI::ContainerBase(0, 0, 0, 0)
 {
 }

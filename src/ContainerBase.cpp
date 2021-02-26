@@ -1,6 +1,6 @@
 #include <ContainerBase.hpp>
 
-void gui::ContainerBase::_draw()
+void GUI::ContainerBase::_draw()
 {
     for (auto elem : childrens)
     {

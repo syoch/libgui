@@ -2,7 +2,7 @@
 #ifndef LIBGUI_SIZE
 #define LIBGUI_SIZE
 
-namespace gui
+namespace GUI
 {
     struct Point
     {

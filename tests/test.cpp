@@ -1,6 +1,6 @@
 #include <gui.hpp>
 #include <engines/debug.hpp>
-using namespace gui;
+using namespace GUI;
 int main(int argc, char const *argv[])
 {
     Root root;
