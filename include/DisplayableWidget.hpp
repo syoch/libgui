@@ -1,6 +1,6 @@
 #pragma once
-#ifndef LIBGUI_DRAW_WRAPPER
-#define LIBGUI_DRAW_WRAPPER
+#ifndef LIBGUI_DISPLAYABLE_WIDGET
+#define LIBGUI_DISPLAYABLE_WIDGET
 
 #include <vector>
 #include "WidgetBase.hpp"
