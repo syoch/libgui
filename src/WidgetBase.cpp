@@ -10,18 +10,23 @@ namespace GUI
 {
     void WidgetBase::draw_line(Point start, Point end)
     {
+        GUI::draw_line(start, end);
     }
     void WidgetBase::draw_rect(Point start, Point end)
     {
+        GUI::draw_rect(start, end);
     }
     void WidgetBase::draw_triangle(Point A, Point B, Point C)
     {
+        GUI::draw_triangle(A, B, C);
     }
-    void WidgetBase::draw_text(int row, int column, char *)
+    void WidgetBase::draw_text(int row, int column, char *text)
     {
+        GUI::draw_text(row, column, text);
     }
     void WidgetBase::draw_translate(int x, int y)
     {
+        GUI::draw_translate(x, y);
     }
     void WidgetBase::draw()
     {
