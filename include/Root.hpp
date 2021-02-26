@@ -3,12 +3,11 @@
 #define LIBGUI_ROOT
 
 #include <vector>
-#include "WidgetBase.hpp"
-#include "Container.hpp"
+#include "ContainerBase.hpp"
 
 namespace gui
 {
-    class Root : public Container
+    class Root : public ContainerBase
     {
         void draw_line(gui::Point start, gui::Point end);
         void draw_rect(gui::Point start, gui::Point end);
