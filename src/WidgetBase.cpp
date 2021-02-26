@@ -4,6 +4,7 @@
 
 #include "Types.hpp"
 #include "Container.hpp"
+#include "DrawWrapper.hpp"
 
 namespace GUI
 {
