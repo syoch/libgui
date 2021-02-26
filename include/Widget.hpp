@@ -5,12 +5,8 @@
 
 namespace gui
 {
-    class Container;
     class Widget : public WidgetBase
     {
-    public:
-        Widget(gui::Container &_super, int x, int y, int w, int h);
-        Widget(int x, int y, int w, int h);
     };
 }
 

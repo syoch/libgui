@@ -3,6 +3,7 @@
 #include <inttypes.h>
 
 #include "Types.hpp"
+#include "Container.hpp"
 
 namespace gui
 {
@@ -32,5 +33,16 @@ namespace gui
     }
     void WidgetBase::onButton(uint32_t key)
     {
+    }
+    WidgetBase::WidgetBase(gui::Container &_super, int x, int y, int w, int h)
+    {
+        pos = ((Point){x, y});
+        size = ((Size){w, h});
+        _super.childrens.emplace_back(*this);
+    }
+    WidgetBase::WidgetBase(int x, int y, int w, int h)
+    {
+        pos = ((Point){x, y});
+        size = ((Size){w, h});
     }
 }
