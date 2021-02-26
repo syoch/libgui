@@ -24,7 +24,7 @@ namespace GUI
         WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h);
         WidgetBase(int x, int y, int w, int h);
 
-        virtual void _draw();
+        void _draw();
         virtual void onTouch(int x, int y);
         virtual void onButton(uint32_t key);
 
