@@ -12,10 +12,10 @@ namespace GUI
     {
     public:
         using WidgetBase::WidgetBase;
-        void onTouch(int x, int y);
-        void onButton(uint32_t key);
+        void onTouch(int x, int y) override;
+        void onButton(uint32_t key) override;
 
-        void _draw();
+        void _draw() override;
 
         std::vector<std::reference_wrapper<WidgetBase>> childrens;
     };
