@@ -3,6 +3,7 @@
 #define LIBGUI_CONTAINER_BASE
 
 #include <vector>
+#include <bits/refwrap.h>
 #include "DisplayableWidget.hpp"
 
 namespace GUI
@@ -16,7 +17,7 @@ namespace GUI
 
         void _draw();
 
-        std::vector<WidgetBase> childrens;
+        std::vector<std::reference_wrapper<WidgetBase>> childrens;
     };
 }
 
