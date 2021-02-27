@@ -18,13 +18,13 @@ namespace GUI
         void draw_triangle(Point A, Point B, Point C);
         void draw_text(int row, int column, char *);
         void draw_translate(int x, int y);
-        void draw();
+        virtual void draw();
 
     public:
         WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h);
         WidgetBase(int x, int y, int w, int h);
 
-        void _draw();
+        virtual void _draw();
         virtual void onTouch(int x, int y);
         virtual void onButton(uint32_t key);
 
