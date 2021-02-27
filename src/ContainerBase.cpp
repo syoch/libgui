@@ -2,7 +2,7 @@
 #include "WidgetBase.hpp"
 void GUI::ContainerBase::_draw()
 {
-    for (WidgetBase elem : childrens)
+    for (WidgetBase &elem : childrens)
     {
         elem._draw();
     }
