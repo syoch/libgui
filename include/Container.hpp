@@ -9,6 +9,7 @@ namespace GUI
 {
     class Container : public virtual ContainerBase, public virtual WidgetBase
     {
+    public:
         Container(ContainerBase &super, int x, int y, int w, int h);
     };
 }
