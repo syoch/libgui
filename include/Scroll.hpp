@@ -17,6 +17,7 @@ namespace GUI
 
     public:
         using Container::Container;
+        Scroll(ContainerBase &super, int x, int y, int w, int h);
         void down(int dy);
         void up(int dy);
 
