@@ -7,7 +7,7 @@
 
 namespace GUI
 {
-    class Container : public ContainerBase, public DisplayableWidget
+    class Container : public ContainerBase, public WidgetBase
     {
     };
 }

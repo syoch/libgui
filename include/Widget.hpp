@@ -1,14 +1,14 @@
 #pragma once
 #ifndef LIBGUI_WIDGET
 #define LIBGUI_WIDGET
-#include <DisplayableWidget.hpp>
+#include <WidgetBase.hpp>
 
 namespace GUI
 {
-    class Widget : public DisplayableWidget
+    class Widget : public WidgetBase
     {
     public:
-        using DisplayableWidget::DisplayableWidget;
+        using WidgetBase::WidgetBase;
     };
 }
 

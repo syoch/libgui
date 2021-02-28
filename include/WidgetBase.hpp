@@ -9,13 +9,13 @@ namespace GUI
 {
     class ContainerBase;
 
-    class DisplayableWidget : public Base
+    class WidgetBase : public Base
     {
         ContainerBase &super;
 
     public:
         using Base::Base;
-        DisplayableWidget(ContainerBase &super, int x, int y, int w, int h);
+        WidgetBase(ContainerBase &super, int x, int y, int w, int h);
     };
 }
 

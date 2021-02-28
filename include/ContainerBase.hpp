@@ -4,7 +4,7 @@
 
 #include <vector>
 #include <bits/refwrap.h>
-#include "DisplayableWidget.hpp"
+#include "WidgetBase.hpp"
 
 namespace GUI
 {
