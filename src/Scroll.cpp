@@ -1,6 +1,10 @@
 #include <Scroll.hpp>
 #include <WidgetBase.hpp>
 
+GUI::Point convert(GUI::Point src)
+{
+}
+
 GUI::Scroll::Scroll(GUI::ContainerBase &super, int x, int y, int w, int h)
     : GUI::Container(super, x, y, w, h), yOffset(0), WidgetBase(super, x, y, w, h), ContainerBase(x, y, w, h)
 {
