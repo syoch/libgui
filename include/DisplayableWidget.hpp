@@ -3,18 +3,18 @@
 #define LIBGUI_DISPLAYABLE_WIDGET
 
 #include <vector>
-#include "WidgetBase.hpp"
+#include "Base.hpp"
 
 namespace GUI
 {
     class ContainerBase;
 
-    class DisplayableWidget : public WidgetBase
+    class DisplayableWidget : public Base
     {
         ContainerBase &super;
 
     public:
-        using WidgetBase::WidgetBase;
+        using Base::Base;
         DisplayableWidget(ContainerBase &super, int x, int y, int w, int h);
     };
 }

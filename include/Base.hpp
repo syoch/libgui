@@ -10,7 +10,7 @@ namespace GUI
 {
     class ContainerBase;
 
-    class WidgetBase
+    class Base
     {
     protected:
         void draw_line(Point start, Point end);
@@ -21,8 +21,8 @@ namespace GUI
         virtual void draw();
 
     public:
-        WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h);
-        WidgetBase(int x, int y, int w, int h);
+        Base(GUI::ContainerBase &_super, int x, int y, int w, int h);
+        Base(int x, int y, int w, int h);
 
         virtual void _draw();
         virtual void onTouch(int x, int y);

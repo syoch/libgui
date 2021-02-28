@@ -7,7 +7,7 @@
 
 namespace GUI
 {
-    class Scroll : public ContainerBase, DisplayableWidget
+    class Scroll : public ContainerBase, public DisplayableWidget
     {
         void draw_line(GUI::Point start, GUI::Point end);
         void draw_rect(GUI::Point start, GUI::Point end);
@@ -17,7 +17,6 @@ namespace GUI
 
     public:
         using DisplayableWidget::DisplayableWidget;
-        Scroll();
         void down(int dy);
         void up(int dy);
 
