@@ -3,11 +3,11 @@
 #define LIBGUI_SCROLL
 
 #include <vector>
-#include "ContainerBase.hpp"
+#include "Container.hpp"
 
 namespace GUI
 {
-    class Scroll : public ContainerBase, public WidgetBase
+    class Scroll : public Container
     {
         void draw_line(GUI::Point start, GUI::Point end);
         void draw_rect(GUI::Point start, GUI::Point end);
@@ -16,7 +16,7 @@ namespace GUI
         void draw_translate(int x, int y);
 
     public:
-        using WidgetBase::WidgetBase;
+        using Container::Container;
         void down(int dy);
         void up(int dy);
 
