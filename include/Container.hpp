@@ -7,11 +7,9 @@
 
 namespace GUI
 {
-    class Container : public ContainerBase, public WidgetBase
+    class Container : public virtual ContainerBase, public virtual WidgetBase
     {
-    public:
-        using ContainerBase::ContainerBase;
-        using WidgetBase::WidgetBase;
+        Container(ContainerBase &super, int x, int y, int w, int h);
     };
 }
 
