@@ -12,6 +12,8 @@ namespace GUI
     {
     public:
         using Base::Base;
+        ContainerBase(int x, int y, int w, int h);
+
         void onTouch(int x, int y) override;
         void onButton(uint32_t key) override;
 

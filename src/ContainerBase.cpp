@@ -1,5 +1,9 @@
 #include <ContainerBase.hpp>
 #include "Base.hpp"
+GUI::ContainerBase::ContainerBase(int x, int y, int w, int h)
+    : Base(x, y, w, h), childrens(std::vector<std::reference_wrapper<Base>>())
+{
+}
 void GUI::ContainerBase::_draw()
 {
     for (Base &elem : childrens)
