@@ -1,7 +1,7 @@
 #include <Scroll.hpp>
 #include <WidgetBase.hpp>
 
-GUI::Point convert(GUI::Point src)
+GUI::Point convert(GUI::Point src,int offset)
 {
 }
 
