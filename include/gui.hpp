@@ -3,3 +3,4 @@
 #include "Widget.hpp"
 #include "Container.hpp"
 #include "Root.hpp"
+#include "Scroll.hpp"
