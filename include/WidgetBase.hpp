@@ -11,10 +11,11 @@ namespace GUI
 
     class WidgetBase : public Base
     {
-        ContainerBase &super;
 
     public:
         using Base::Base;
+        ContainerBase &super;
+
         WidgetBase(ContainerBase &super, int x, int y, int w, int h);
     };
 }
