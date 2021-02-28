@@ -10,7 +10,7 @@ namespace GUI
     class Container : public ContainerBase, public WidgetBase
     {
     public:
-        using ContainerBase::Base;
+        using ContainerBase::ContainerBase;
         using WidgetBase::WidgetBase;
     };
 }
