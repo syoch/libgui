@@ -21,15 +21,15 @@ void GUI::Scroll::down(int dy)
 }
 void GUI::Scroll::draw_line(Point start, Point end)
 {
-    super.draw_line(start, end);
+    super.draw_line(convert(start, yOffset), convert(end, yOffset));
 }
 void GUI::Scroll::draw_rect(Point start, Point end)
 {
-    super.draw_rect(start, end);
+    super.draw_rect(convert(start, yOffset), convert(end, yOffset));
 }
 void GUI::Scroll::draw_triangle(Point A, Point B, Point C)
 {
-    super.draw_triangle(A, B, C);
+    super.draw_triangle(convert(A, yOffset), convert(B, yOffset), convert(C, yOffset));
 }
 void GUI::Scroll::draw_text(int row, int column, char *text)
 {
@@ -37,5 +37,5 @@ void GUI::Scroll::draw_text(int row, int column, char *text)
 }
 void GUI::Scroll::draw_translate(int x, int y)
 {
-    super.draw_translate(x, y);
+    super.draw_translate(x, y + yOffset);
 }
