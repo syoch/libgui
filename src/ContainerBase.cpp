@@ -12,8 +12,8 @@ void GUI::ContainerBase::onTouch(int x, int y)
     for (WidgetBase child : childrens)
     {
         if (
-            child.pos.x <= x && x <= child.pos.x + child.size.width ||
-            child.pos.y <= y && y <= child.pos.y + child.size.height)
+            (child.pos.x <= x && x <= child.pos.x + child.size.width) ||
+            (child.pos.y <= y && y <= child.pos.y + child.size.height))
         {
             child.onTouch(x - child.pos.x, y - child.pos.y);
             break;
