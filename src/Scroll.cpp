@@ -1,8 +1,10 @@
 #include <Scroll.hpp>
 #include <WidgetBase.hpp>
 
-GUI::Point convert(GUI::Point src,int offset)
+GUI::Point convert(GUI::Point src, int offset)
 {
+    src.y += offset;
+    return src;
 }
 
 GUI::Scroll::Scroll(GUI::ContainerBase &super, int x, int y, int w, int h)
