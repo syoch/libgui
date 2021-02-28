@@ -45,12 +45,6 @@ namespace GUI
     void Base::onButton(uint32_t key)
     {
     }
-    Base::Base(GUI::ContainerBase &_super, int x, int y, int w, int h)
-    {
-        pos = ((Point){x, y});
-        size = ((Size){w, h});
-        _super.childrens.emplace_back(*this);
-    }
     Base::Base(int x, int y, int w, int h)
     {
         pos = ((Point){x, y});

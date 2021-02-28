@@ -21,7 +21,6 @@ namespace GUI
         virtual void draw();
 
     public:
-        Base(GUI::ContainerBase &_super, int x, int y, int w, int h);
         Base(int x, int y, int w, int h);
 
         virtual void _draw();
