@@ -5,11 +5,7 @@
 
 namespace GUI
 {
-    class Widget : public WidgetBase
-    {
-    public:
-        using WidgetBase::WidgetBase;
-    };
+    using Widget = WidgetBase;
 }
 
 #endif
