@@ -5,7 +5,7 @@
 #include "Types.hpp"
 #include "Container.hpp"
 #include "DrawWrapper.hpp"
-
+#include <iostream>
 namespace GUI
 {
     void Base::draw_line(Point start, Point end)
@@ -26,7 +26,7 @@ namespace GUI
     }
     void Base::draw_translate(int x, int y)
     {
-        GUI::draw_translate(x, y);
+        GUI::_draw_translate(x, y);
     }
     void Base::draw()
     {

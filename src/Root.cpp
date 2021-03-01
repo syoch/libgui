@@ -19,7 +19,7 @@ void GUI::Root::draw_text(int row, int column, char *text)
 }
 void GUI::Root::draw_translate(int x, int y)
 {
-    GUI::draw_translate(x, y);
+    GUI::_draw_translate(x, y);
 }
 GUI::Root::Root()
     : GUI::ContainerBase(0, 0, 0, 0)
