@@ -1,9 +1,11 @@
 #include <Scroll.hpp>
 #include <WidgetBase.hpp>
+#include <DrawWrapper.hpp>
 
 GUI::Point convert(GUI::Point src, int offset)
 {
-    src.y += offset;
+    if (!GUI::isRelative)
+        src.y += offset;
     return src;
 }
 
