@@ -13,6 +13,7 @@ namespace GUI
     void draw_triangle(Point A, Point B, Point C);
     void draw_text(int row, int column, char *);
     void draw_translate(int x, int y);
+    void _draw_translate(int x, int y);
 }
 
 #endif
