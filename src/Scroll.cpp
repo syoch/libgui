@@ -45,7 +45,9 @@ void GUI::Scroll::draw_translate(int x, int y)
 }
 void GUI::Scroll::_draw()
 {
-    draw_translate(0, yOffset);
+    if (GUI::isRelative)
+        draw_translate(0, yOffset);
     Container::_draw();
-    draw_translate(0, -yOffset);
+    if (GUI::isRelative)
+        draw_translate(0, -yOffset);
 }
