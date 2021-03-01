@@ -1,15 +1,21 @@
 #include <ContainerBase.hpp>
 #include "Base.hpp"
+#include <DrawWrapper.hpp>
+
 GUI::ContainerBase::ContainerBase(int x, int y, int w, int h)
     : Base(x, y, w, h), childrens(std::vector<std::reference_wrapper<Base>>())
 {
 }
 void GUI::ContainerBase::_draw()
 {
+    if (isRelative)
+        draw_translate(pos.x, pos.y);
     for (Base &elem : childrens)
     {
         elem._draw();
     }
+    if (isRelative)
+        draw_translate(pos.x, -pos.y);
 }
 void GUI::ContainerBase::onTouch(int x, int y)
 {
