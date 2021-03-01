@@ -41,5 +41,5 @@ void GUI::Scroll::draw_text(int row, int column, char *text)
 }
 void GUI::Scroll::draw_translate(int x, int y)
 {
-    super.draw_translate(x, y + yOffset);
+    super.draw_translate(x, y);
 }

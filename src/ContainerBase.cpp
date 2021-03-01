@@ -15,7 +15,7 @@ void GUI::ContainerBase::_draw()
         elem._draw();
     }
     if (isRelative)
-        draw_translate(pos.x, -pos.y);
+        draw_translate(-pos.x, -pos.y);
 }
 void GUI::ContainerBase::onTouch(int x, int y)
 {
