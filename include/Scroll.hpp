@@ -15,6 +15,7 @@ namespace GUI
         void draw_triangle(Point A, Point B, Point C) override;
         void draw_text(int row, int column, char *) override;
         void draw_translate(int x, int y) override;
+        void _draw() override;
 
         using Container::Container;
         Scroll(ContainerBase &super, int x, int y, int w, int h);
