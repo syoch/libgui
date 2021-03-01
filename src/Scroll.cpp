@@ -14,12 +14,12 @@ GUI::Scroll::Scroll(GUI::ContainerBase &super, int x, int y, int w, int h)
 void GUI::Scroll::up(int dy)
 {
     yOffset -= dy;
-    ContainerBase::draw();
+    _draw();
 }
 void GUI::Scroll::down(int dy)
 {
     yOffset += dy;
-    ContainerBase::draw();
+    _draw();
 }
 void GUI::Scroll::draw_line(Point start, Point end)
 {
