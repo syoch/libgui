@@ -4,20 +4,20 @@
 
 #include <vector>
 #include <bits/refwrap.h>
-#include "DisplayableWidget.hpp"
+#include "WidgetBase.hpp"
 
 namespace GUI
 {
-    class ContainerBase : public WidgetBase
+    class ContainerBase : public Base
     {
     public:
-        using WidgetBase::WidgetBase;
+        using Base::Base;
         void onTouch(int x, int y) override;
         void onButton(uint32_t key) override;
 
         void _draw() override;
 
-        std::vector<std::reference_wrapper<WidgetBase>> childrens;
+        std::vector<std::reference_wrapper<Base>> childrens;
     };
 }
 

@@ -1,35 +1,21 @@
 #pragma once
-#ifndef LIBGUI_WIDGET_BASE
-#define LIBGUI_WIDGET_BASE
+#ifndef LIBGUI_DISPLAYABLE_WIDGET
+#define LIBGUI_DISPLAYABLE_WIDGET
 
-#include <inttypes.h>
-
-#include "Types.hpp"
+#include <vector>
+#include "Base.hpp"
 
 namespace GUI
 {
     class ContainerBase;
 
-    class WidgetBase
+    class WidgetBase : public Base
     {
-    protected:
-        void draw_line(Point start, Point end);
-        void draw_rect(Point start, Point end);
-        void draw_triangle(Point A, Point B, Point C);
-        void draw_text(int row, int column, char *);
-        void draw_translate(int x, int y);
-        virtual void draw();
+        ContainerBase &super;
 
     public:
-        WidgetBase(GUI::ContainerBase &_super, int x, int y, int w, int h);
-        WidgetBase(int x, int y, int w, int h);
-
-        virtual void _draw();
-        virtual void onTouch(int x, int y);
-        virtual void onButton(uint32_t key);
-
-        Point pos;
-        Size size;
+        using Base::Base;
+        WidgetBase(ContainerBase &super, int x, int y, int w, int h);
     };
 }
 

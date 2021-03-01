@@ -1,15 +1,15 @@
 #include <ContainerBase.hpp>
-#include "WidgetBase.hpp"
+#include "Base.hpp"
 void GUI::ContainerBase::_draw()
 {
-    for (WidgetBase &elem : childrens)
+    for (Base &elem : childrens)
     {
         elem._draw();
     }
 }
 void GUI::ContainerBase::onTouch(int x, int y)
 {
-    for (WidgetBase child : childrens)
+    for (Base child : childrens)
     {
         if (
             (child.pos.x <= x && x <= child.pos.x + child.size.width) ||
@@ -22,7 +22,7 @@ void GUI::ContainerBase::onTouch(int x, int y)
 }
 void GUI::ContainerBase::onButton(uint32_t key)
 {
-    for (WidgetBase child : childrens)
+    for (Base child : childrens)
     {
         child.onButton(key);
     }
