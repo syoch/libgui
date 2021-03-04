@@ -8,6 +8,16 @@ GUI::Point GUI::Scroll::convert(GUI::Point src)
         src.y += yOffset;
     if (!GUI::isRelative)
         src.x += xOffset;
+
+    if (src.x > WidgetBase::size.width)
+    {
+        src.x = WidgetBase::size.width;
+    }
+    if (src.y > WidgetBase::size.height)
+    {
+        src.y = WidgetBase::size.height;
+    }
+
     return src;
 }
 
