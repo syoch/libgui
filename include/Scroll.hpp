@@ -21,9 +21,12 @@ namespace GUI
         Scroll(ContainerBase &super, int x, int y, int w, int h);
         void down(int dy);
         void up(int dy);
+        void right(int dy);
+        void left(int dy);
 
     private:
         int yOffset;
+        int xOffset;
     };
 }
 
