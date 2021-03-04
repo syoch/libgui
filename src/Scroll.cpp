@@ -2,10 +2,12 @@
 #include <WidgetBase.hpp>
 #include <DrawWrapper.hpp>
 
-GUI::Point convert(GUI::Point src, int offset)
+GUI::Point GUI::Scroll::convert(GUI::Point src)
 {
     if (!GUI::isRelative)
-        src.y += offset;
+        src.y += yOffset;
+    if (!GUI::isRelative)
+        src.x += xOffset;
     return src;
 }
 

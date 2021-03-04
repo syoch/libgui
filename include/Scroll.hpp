@@ -25,6 +25,7 @@ namespace GUI
         void left(int dy);
 
     private:
+        Point convert(Point src);
         int yOffset;
         int xOffset;
     };
