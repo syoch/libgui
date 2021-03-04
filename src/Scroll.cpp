@@ -25,6 +25,16 @@ void GUI::Scroll::down(int dy)
     yOffset += dy;
     _draw();
 }
+void GUI::Scroll::right(int dy)
+{
+    xOffset += dy;
+    _draw();
+}
+void GUI::Scroll::left(int dy)
+{
+    yOffset -= dy;
+    _draw();
+}
 void GUI::Scroll::draw_line(Point start, Point end)
 {
     super.draw_line(convert(start), convert(end));
