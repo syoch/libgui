@@ -9,11 +9,11 @@ namespace GUI
 {
     class Root : public ContainerBase
     {
-        void draw_line(GUI::Point start, GUI::Point end);
-        void draw_rect(GUI::Point start, GUI::Point end);
-        void draw_triangle(GUI::Point A, GUI::Point B, GUI::Point C);
-        void draw_text(int row, int column, char *);
-        void draw_translate(int x, int y);
+        void draw_line(DrawPoint start, DrawPoint end) override;
+        void draw_rect(DrawPoint start, DrawPoint end) override;
+        void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C) override;
+        void draw_text(int row, int column, char *, Color color) override;
+        void draw_translate(int x, int y) override;
 
     public:
         Root();
