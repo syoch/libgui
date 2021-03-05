@@ -10,10 +10,10 @@ namespace GUI
     class Scroll : public Container
     {
     public:
-        void draw_line(Point start, Point end) override;
-        void draw_rect(Point start, Point end) override;
-        void draw_triangle(Point A, Point B, Point C) override;
-        void draw_text(int row, int column, char *) override;
+        void draw_line(DrawPoint start, DrawPoint end) override;
+        void draw_rect(DrawPoint start, DrawPoint end) override;
+        void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C) override;
+        void draw_text(int row, int column, char *, Color color) override;
         void draw_translate(int x, int y) override;
         void _draw() override;
 
