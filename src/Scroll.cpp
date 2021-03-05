@@ -2,20 +2,20 @@
 #include <WidgetBase.hpp>
 #include <DrawWrapper.hpp>
 
-GUI::Point GUI::Scroll::convert(GUI::Point src)
+GUI::DrawPoint GUI::Scroll::convert(GUI::DrawPoint src)
 {
     if (!GUI::isRelative)
-        src.y += yOffset;
+        src.point.y += yOffset;
     if (!GUI::isRelative)
-        src.x += xOffset;
+        src.point.x += xOffset;
 
-    if (src.x > WidgetBase::size.width)
+    if (src.point.x > WidgetBase::size.width)
     {
-        src.x = WidgetBase::size.width;
+        src.point.x = WidgetBase::size.width;
     }
-    if (src.y > WidgetBase::size.height)
+    if (src.point.y > WidgetBase::size.height)
     {
-        src.y = WidgetBase::size.height;
+        src.point.y = WidgetBase::size.height;
     }
 
     return src;
