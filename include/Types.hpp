@@ -4,23 +4,27 @@
 
 namespace GUI
 {
-    struct Point
+    class Point
     {
+    public:
         int x;
         int y;
     };
-    struct Size
+    class Size
     {
+    public:
         int width;
         int height;
     };
-    struct Color
+    class Color
     {
+    public:
         int r, g, b;
         int a;
     };
-    struct DrawPoint
+    class DrawPoint
     {
+    public:
         Point point;
         Color color;
     };
