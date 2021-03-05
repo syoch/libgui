@@ -8,21 +8,21 @@
 #include <iostream>
 namespace GUI
 {
-    void Base::draw_line(Point start, Point end)
+    void Base::draw_line(DrawPoint start, DrawPoint end)
     {
         GUI::draw_line(start, end);
     }
-    void Base::draw_rect(Point start, Point end)
+    void Base::draw_rect(DrawPoint start, DrawPoint end)
     {
         GUI::draw_rect(start, end);
     }
-    void Base::draw_triangle(Point A, Point B, Point C)
+    void Base::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
     {
         GUI::draw_triangle(A, B, C);
     }
-    void Base::draw_text(int row, int column, char *text)
+    void Base::draw_text(int row, int column, char *text, Color color)
     {
-        GUI::draw_text(row, column, text);
+        GUI::draw_text(row, column, text, color);
     }
     void Base::draw_translate(int x, int y)
     {

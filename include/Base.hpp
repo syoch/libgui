@@ -16,10 +16,10 @@ namespace GUI
         virtual void draw();
 
     public:
-        virtual void draw_line(Point start, Point end);
-        virtual void draw_rect(Point start, Point end);
-        virtual void draw_triangle(Point A, Point B, Point C);
-        virtual void draw_text(int row, int column, char *);
+        virtual void draw_line(DrawPoint start, DrawPoint end);
+        virtual void draw_rect(DrawPoint start, DrawPoint end);
+        virtual void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
+        virtual void draw_text(int row, int column, char *, Color color);
         virtual void draw_translate(int x, int y);
 
     public:
