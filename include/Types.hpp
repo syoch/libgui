@@ -14,6 +14,16 @@ namespace GUI
         int width;
         int height;
     };
+    struct Color
+    {
+        int r, g, b;
+        int a;
+    };
+    struct DrawPoint
+    {
+        Point point;
+        Color color;
+    };
 }
 
 #endif
