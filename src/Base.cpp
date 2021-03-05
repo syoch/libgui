@@ -45,6 +45,15 @@ namespace GUI
     void Base::onButton(uint32_t key)
     {
     }
+    void Base::hide()
+    {
+        isHided = true;
+    }
+    void Base::show()
+    {
+        isHided = false;
+    }
+
     Base::Base(int x, int y, int w, int h)
     {
         pos = ((Point){x, y});
