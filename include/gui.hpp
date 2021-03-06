@@ -4,3 +4,4 @@
 #include "Container.hpp"
 #include "Root.hpp"
 #include "Scroll.hpp"
+#include "Label.hpp"
