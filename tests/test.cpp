@@ -20,12 +20,9 @@ int main(int argc, char const *argv[])
 {
     Root root;
 
-    auto panel1 = Scroll(root, 50, 50, 100, 100);
-    Btn(panel1, 0, 0, 100, 100);
+    Label<std::string>(root, 0, 0, 100, 100, "hi");
 
     root._draw();
-    std::wcout << std::endl;
-    panel1.down(1);
 
     return 0;
 }
