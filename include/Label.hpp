@@ -20,7 +20,14 @@ namespace GUI
 
         void draw() override
         {
-            draw_text(0, 0, "", (GUI::Color){0, 0, 0, 0});
+            if (typeid(T) == typeid(std::string))
+            {
+                draw_text(0, 0, text.c_str(), (GUI::Color){0, 0, 0, 0});
+            }
+            else
+            {
+                draw_text(0, 0, "#NIMP#", (GUI::Color){0, 0, 0, 0});
+            }
         };
 
     private:
