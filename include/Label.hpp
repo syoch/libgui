@@ -8,11 +8,11 @@
 
 namespace GUI
 {
-    class Scroll : public Widget
+    class Label : public Widget
     {
     public:
         using Widget::Widget;
-        Scroll(ContainerBase &super, int x, int y, int w, int h);
+        Label(ContainerBase &super, int x, int y, int w, int h, std::wstring text);
 
         void draw() override;
 
