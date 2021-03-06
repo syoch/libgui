@@ -22,11 +22,11 @@ namespace GUI
         {
             if (typeid(T) == typeid(std::string))
             {
-                draw_text(0, 0, text.c_str(), (GUI::Color){0, 0, 0, 0});
+                draw_text(0, 0, (char *)text.c_str(), (GUI::Color){0, 0, 0, 0});
             }
             else
             {
-                draw_text(0, 0, "#NIMP#", (GUI::Color){0, 0, 0, 0});
+                draw_text(0, 0, (char *)"#NIMP#", (GUI::Color){0, 0, 0, 0});
             }
         };
 
