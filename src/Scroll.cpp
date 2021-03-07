@@ -22,7 +22,7 @@ GUI::DrawPoint GUI::Scroll::convert(GUI::DrawPoint src)
 }
 
 GUI::Scroll::Scroll(GUI::ContainerBase &super, int x, int y, int w, int h)
-    : yOffset(0), xOffset(0), ContainerBase(x, y, w, h), WidgetBase(super, x, y, w, h), GUI::Container(super, x, y, w, h)
+    : ContainerBase(x, y, w, h), WidgetBase(super, x, y, w, h), GUI::Container(super, x, y, w, h), yOffset(0), xOffset(0)
 {
 }
 void GUI::Scroll::up(int dy)
