@@ -39,10 +39,10 @@ namespace GUI
         if (isRelative)
             draw_translate(-pos.x, -pos.y);
     }
-    void Base::onTouch(int x, int y)
+    void Base::onTouch(int, int)
     {
     }
-    void Base::onButton(uint32_t key)
+    void Base::onButton(uint32_t)
     {
     }
     void Base::hide()
