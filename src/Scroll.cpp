@@ -53,6 +53,10 @@ void GUI::Scroll::draw_rect(DrawPoint start, DrawPoint end)
 {
     super.draw_rect(convert(start), convert(end));
 }
+void GUI::Scroll::draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D)
+{
+    super.draw_rect(convert(A), convert(B), convert(C), convert(D));
+}
 void GUI::Scroll::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
 {
     super.draw_triangle(convert(A), convert(B), convert(C));
