@@ -11,12 +11,12 @@ private:
 
 public:
     using Widget::Widget;
-    void onTouch(int x, int y)
+    void onTouch(int, int)
     {
         std::wcout << "touched btn" << std::endl;
     }
 };
-int main(int argc, char const *argv[])
+int main(int, char const *[])
 {
     Root root;
 
