@@ -12,6 +12,7 @@ namespace GUI
     void draw_end();
     void draw_line(DrawPoint start, DrawPoint end);
     void draw_rect(DrawPoint start, DrawPoint end);
+    void draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D);
     void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
     void draw_text(int row, int column, char *, Color color);
     void draw_translate(int x, int y);
