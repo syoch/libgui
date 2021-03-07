@@ -11,6 +11,7 @@ namespace GUI
     {
         void draw_line(DrawPoint start, DrawPoint end) override;
         void draw_rect(DrawPoint start, DrawPoint end) override;
+        void draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D) override;
         void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C) override;
         void draw_text(int row, int column, char *, Color color) override;
         void draw_translate(int x, int y) override;
