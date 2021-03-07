@@ -29,8 +29,8 @@ namespace GUI
         virtual void onTouch(int x, int y);
         virtual void onButton(uint32_t key);
 
-        void hide();
-        void show();
+        virtual void hide();
+        virtual void show();
 
         Point pos;
         Size size;
