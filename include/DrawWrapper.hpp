@@ -8,6 +8,8 @@
 namespace GUI
 {
     extern const bool isRelative;
+    void draw_begin();
+    void draw_end();
     void draw_line(DrawPoint start, DrawPoint end);
     void draw_rect(DrawPoint start, DrawPoint end);
     void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);

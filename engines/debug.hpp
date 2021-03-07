@@ -5,6 +5,14 @@
 namespace GUI
 {
     const bool isRelative = true;
+    void draw_begin()
+    {
+        std::wcout << "draw begin" << std::endl;
+    }
+    void draw_end()
+    {
+        std::wcout << "draw end" << std::endl;
+    }
     void draw_line(GUI::DrawPoint start, GUI::DrawPoint end)
     {
         std::wcout << "Draw line: "
