@@ -59,6 +59,14 @@ namespace GUI
                    << "[" << color.r << ", " << color.b << ", " << color.g << ", " << color.a << "] "
                    << std::endl;
     }
+    void draw_shadowText(int row, int column, char *text, Color color)
+    {
+        std::wcout << "Draw Stex: "
+                   << row << "," << column << " "
+                   << "[" << text << "] "
+                   << "[" << color.r << ", " << color.b << ", " << color.g << ", " << color.a << "] "
+                   << std::endl;
+    }
     void draw_translate(int x, int y)
     {
         std::wcout << "Draw tran: "
