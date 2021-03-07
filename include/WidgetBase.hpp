@@ -17,7 +17,7 @@ namespace GUI
         void draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D);
         void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
         void draw_text(int row, int column, char *text, Color color);
-        void draw_shadowText(int row, int column, char *, Color color);
+        void draw_textShadow(int row, int column, char *, Color color);
         void draw_translate(int x, int y);
 
     public:
