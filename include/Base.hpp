@@ -22,7 +22,7 @@ namespace GUI
         virtual void draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C);
         virtual void draw_text(int row, int column, char *, Color color);
         virtual void draw_textShadow(int row, int column, char *, Color color);
-        virtual void draw_translate(int x, int y);
+        virtual void draw_translate(float x, float y);
 
     public:
         Base(int x, int y, int w, int h);

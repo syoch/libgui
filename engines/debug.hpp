@@ -67,7 +67,7 @@ namespace GUI
                    << "[" << color.r << ", " << color.b << ", " << color.g << ", " << color.a << "] "
                    << std::endl;
     }
-    void draw_translate(int x, int y)
+    void draw_translate(float x, float y)
     {
         std::wcout << "Draw tran: "
                    << x << ", " << y
