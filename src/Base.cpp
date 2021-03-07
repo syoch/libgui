@@ -16,6 +16,10 @@ namespace GUI
     {
         GUI::draw_rect(start, end);
     }
+    void Base::draw_rect(DrawPoint A, DrawPoint B, DrawPoint C, DrawPoint D)
+    {
+        GUI::draw_rect(A, B, C, D);
+    }
     void Base::draw_triangle(DrawPoint A, DrawPoint B, DrawPoint C)
     {
         GUI::draw_triangle(A, B, C);
