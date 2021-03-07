@@ -17,6 +17,8 @@ namespace GUI
 
     public:
         Root();
+
+        void _draw() override;
     };
 }
 

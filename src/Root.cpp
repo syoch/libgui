@@ -21,6 +21,12 @@ void GUI::Root::draw_translate(int x, int y)
 {
     GUI::_draw_translate(x, y);
 }
+void GUI::Root::_draw()
+{
+    GUI::draw_begin();
+    ContainerBase::_draw();
+    GUI::draw_end();
+}
 GUI::Root::Root()
     : GUI::ContainerBase(0, 0, 0, 0)
 {
