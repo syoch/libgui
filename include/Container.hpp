@@ -12,6 +12,8 @@ namespace GUI
     public:
         Container(ContainerBase &super, int x, int y, int w, int h);
         void _draw() override;
+        void hide() override;
+        void show() override;
     };
 }
 

@@ -8,3 +8,11 @@ void GUI::Container::_draw()
 {
     ContainerBase::_draw();
 }
+void GUI::Container::hide()
+{
+    WidgetBase::hide();
+}
+void GUI::Container::show()
+{
+    WidgetBase::show();
+}
