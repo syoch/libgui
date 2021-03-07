@@ -27,6 +27,10 @@ void GUI::WidgetBase::draw_text(int row, int column, char *text, Color color)
 {
     super.draw_text(row, column, text, color);
 }
+void GUI::WidgetBase::draw_shadowText(int row, int column, char *text, Color color)
+{
+    super.draw_shadowText(row, column, text, color);
+}
 void GUI::WidgetBase::draw_translate(int x, int y)
 {
     super.draw_translate(x, y);
