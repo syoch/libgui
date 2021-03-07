@@ -14,7 +14,7 @@ namespace GUI
     public:
         using Widget::Widget;
         Label(ContainerBase &super, int x, int y, int w, int h, T text)
-            : text(text), Widget(super, x, y, w, h)
+            : Widget(super, x, y, w, h), text(text)
         {
         }
 
