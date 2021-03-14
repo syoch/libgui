@@ -24,16 +24,6 @@ namespace GUI
                    << std::endl;
     }
 
-    void draw_rect(GUI::DrawPoint start, GUI::DrawPoint end)
-    {
-        std::wcout << "Draw rect: "
-                   << "(" << start.point.x << ", " << start.point.y << ")"
-                   << "[" << start.color.r << ", " << start.color.b << ", " << start.color.g << ", " << start.color.a << "] "
-                   << "to"
-                   << "(" << end.point.x << ", " << end.point.y << ")"
-                   << "[" << end.color.r << ", " << end.color.b << ", " << end.color.g << ", " << end.color.a << "] "
-                   << std::endl;
-    }
     void draw_rect(GUI::DrawPoint A, GUI::DrawPoint B, GUI::DrawPoint C, GUI::DrawPoint D)
     {
         std::wcout << "Draw rect: "
