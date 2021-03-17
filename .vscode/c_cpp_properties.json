@@ -7,7 +7,11 @@
                 "${workspaceFolder}/include",
                 "${workspaceFolder}"
             ],
-            "defines": [],
+            "defines": [
+                "str_t = std::string",
+                "color_t = uint32_t",
+                "input_t = uint32_t"
+            ],
             "compilerPath": "/home/syoch/bin/cling/bin/clang",
             "cStandard": "c11",
             "cppStandard": "c++17",
