@@ -9,15 +9,18 @@ namespace GUI
 {
     class Pos
     {
+    public:
         int x, y;
     };
     class Size
     {
+    public:
         int w, h;
     };
 
     class DrawInfo
     {
+    public:
         Pos pos;
         Size size;
         Color color;
