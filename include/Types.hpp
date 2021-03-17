@@ -12,6 +12,10 @@ namespace GUI
     {
         int w, h;
     };
+
+    using Str = str_t;
+    using Color = color_t;
+    using InputData = input_t;
 } // namespace GUI
 
 #endif
