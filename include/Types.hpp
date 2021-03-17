@@ -16,6 +16,13 @@ namespace GUI
     using Str = str_t;
     using Color = color_t;
     using InputData = input_t;
+
+    class DrawInfo
+    {
+        Pos pos;
+        Size size;
+        Color color;
+    }
 } // namespace GUI
 
 #endif
