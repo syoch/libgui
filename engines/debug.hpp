@@ -10,10 +10,12 @@ namespace GUI
         bool begin()
         {
             std::wcout << "draw begin" << std::endl;
+            return true;
         }
         bool end()
         {
             std::wcout << "draw end" << std::endl;
+            return true;
         }
         bool line(DrawInfo start, DrawInfo end)
         {
@@ -27,6 +29,7 @@ namespace GUI
                        << "[" << end.color << ", "
                        << "] "
                        << std::endl;
+            return true;
         }
 
         bool rect(DrawInfo A, DrawInfo B, DrawInfo C, DrawInfo D)
@@ -48,6 +51,7 @@ namespace GUI
                        << "[" << D.color << ", "
                        << "] "
                        << std::endl;
+            return true;
         }
 
         bool text(int row, int column, char *text, Color color)
@@ -57,6 +61,7 @@ namespace GUI
                        << "[" << text << "] "
                        << "[" << color << "]" << std::endl;
             ;
+            return true;
         }
         bool textShadow(int row, int column, char *text, Color color)
         {
@@ -64,12 +69,14 @@ namespace GUI
                        << row << "," << column << " "
                        << "[" << text << "] "
                        << "[" << color << "]" << std::endl;
+            return true;
         }
         bool translate(float x, float y)
         {
             std::wcout << "Draw tran: "
                        << x << ", " << y
                        << std::endl;
+            return true;
         }
         bool triangle(DrawInfo A, DrawInfo B, DrawInfo C)
         {
@@ -87,7 +94,9 @@ namespace GUI
                        << "] "
                        << ", "
                        << std::endl;
+            return true;
         }
+
     } // namespace render
 
 }
