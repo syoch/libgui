@@ -1,3 +1,5 @@
+#! /usr/bin/python3
+
 # Type Config
 str_t = "std::wstring"
 color_t = "uint32_t"
