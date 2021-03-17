@@ -24,9 +24,9 @@ namespace GUI
         Pos pos;
         Size size;
         Color color;
-    }
+    };
 
-    using converterT = std::function<Pos &, (Pos &)>;
+    using converterT = std::function<Pos &(Pos &)>;
 } // namespace GUI
 
 #endif
