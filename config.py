@@ -14,22 +14,24 @@ requiredHeaders = [
 def writeConfig():
     fp = open("include/config.h", "w")
     fp.writelines([
-        f"#pragma once",
-        f"#ifndef LIBGUI_CONFIG",
-        f"#define LIBGUI_CONFIG",
-        f"",
-        *[f"#include {a}" for a in requiredHeaders],
-        f"",
-        f"namespace GUI",
-        f"{{",
-        f"    using Str = {str_t};",
-        f"    using Color = {color_t};",
-        f"    using InputData = {input_t};",
-        f"    using Vector = {vec_t};",
-        f"}} // namespace GUI",
-        f"",
-        f"#endif"
+        f"#pragma once\n",
+        f"#ifndef LIBGUI_CONFIG\n",
+        f"#define LIBGUI_CONFIG\n",
+        f"\n",
+        *[f"#include {a}\n" for a in requiredHeaders],
+        f"\n",
+        f"namespace GUI\n",
+        f"{{\n",
+        f"    using Str = {str_t};\n",
+        f"    using Color = {color_t};\n",
+        f"    using InputData = {input_t};\n",
+        f"    template<typename T>\n"
+        f"    using Vector = {vec_t}<T>;\n",
+        f"}} // namespace GUI\n",
+        f"\n",
+        f"#endif\n"
     ])
+    fp.close()
 
 
 if __name__ == "__main__":
