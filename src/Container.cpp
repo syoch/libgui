@@ -11,7 +11,7 @@ namespace GUI
     {
         for (auto widget : widgets)
         {
-            widget.draw();
+            widget.get().draw();
         }
     }
 } // namespace GUI
