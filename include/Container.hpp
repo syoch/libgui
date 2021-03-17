@@ -18,7 +18,7 @@ namespace GUI
         void add(Widget &);
 
     private:
-        Vector<Widget &> widgets
+        Vector<Widget &> widgets;
     };
 } // namespace GUI
 
