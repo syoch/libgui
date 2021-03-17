@@ -7,15 +7,15 @@ namespace GUI
     namespace render
     {
         const bool isRelative = true;
-        void begin()
+        bool begin()
         {
             std::wcout << "draw begin" << std::endl;
         }
-        void end()
+        bool end()
         {
             std::wcout << "draw end" << std::endl;
         }
-        void line(DrawInfo start, DrawInfo end)
+        bool line(DrawInfo start, DrawInfo end)
         {
 
             std::wcout << "Draw line: "
@@ -29,7 +29,7 @@ namespace GUI
                        << std::endl;
         }
 
-        void rect(DrawInfo A, DrawInfo B, DrawInfo C, DrawInfo D)
+        bool rect(DrawInfo A, DrawInfo B, DrawInfo C, DrawInfo D)
         {
             std::wcout << "Draw rect: "
                        << "(" << A.pos.x << ", " << A.pos.y << ")"
@@ -50,7 +50,7 @@ namespace GUI
                        << std::endl;
         }
 
-        void text(int row, int column, char *text, Color color)
+        bool text(int row, int column, char *text, Color color)
         {
             std::wcout << "Draw text: "
                        << row << "," << column << " "
@@ -58,20 +58,20 @@ namespace GUI
                        << "[" << color << "]" << std::endl;
             ;
         }
-        void textShadow(int row, int column, char *text, Color color)
+        bool textShadow(int row, int column, char *text, Color color)
         {
             std::wcout << "Draw Stex: "
                        << row << "," << column << " "
                        << "[" << text << "] "
                        << "[" << color << "]" << std::endl;
         }
-        void translate(float x, float y)
+        bool translate(float x, float y)
         {
             std::wcout << "Draw tran: "
                        << x << ", " << y
                        << std::endl;
         }
-        void triangle(DrawInfo A, DrawInfo B, DrawInfo C)
+        bool triangle(DrawInfo A, DrawInfo B, DrawInfo C)
         {
             std::wcout << "Draw tria: "
                        << "(" << A.pos.x << ", " << A.pos.y << ")"
