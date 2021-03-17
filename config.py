@@ -30,3 +30,7 @@ def writeConfig():
         f"",
         f"#endif"
     ])
+
+
+if __name__ == "__main__":
+    writeConfig()
