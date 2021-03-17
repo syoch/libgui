@@ -7,7 +7,8 @@ input_t = "uint32_t"
 vec_t = "std::vector"
 # includes
 requiredHeaders = [
-    "<vector>"
+    "<vector>",
+    "<string>"
 ]
 
 
