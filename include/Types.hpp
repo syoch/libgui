@@ -2,13 +2,16 @@
 #ifndef LIBGUI_TYPES
 #define LIBGUI_TYPES
 
-class Pos
+namespace GUI
 {
-    int x, y;
-};
-class Size
-{
-    int w, h;
-};
+    class Pos
+    {
+        int x, y;
+    };
+    class Size
+    {
+        int w, h;
+    };
+} // namespace GUI
 
 #endif
