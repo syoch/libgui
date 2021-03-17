@@ -3,6 +3,7 @@
 #define LIBGUI_TYPES
 
 #include <functional>
+#include "config.h"
 
 namespace GUI
 {
@@ -14,10 +15,6 @@ namespace GUI
     {
         int w, h;
     };
-
-    using Str = str_t;
-    using Color = color_t;
-    using InputData = input_t;
 
     class DrawInfo
     {
