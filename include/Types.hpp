@@ -2,6 +2,8 @@
 #ifndef LIBGUI_TYPES
 #define LIBGUI_TYPES
 
+#include <functional>
+
 namespace GUI
 {
     class Pos
@@ -23,6 +25,8 @@ namespace GUI
         Size size;
         Color color;
     }
+
+    using converterT = std::function<Pos &, (Pos &)>;
 } // namespace GUI
 
 #endif
