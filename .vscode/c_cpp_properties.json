@@ -8,7 +8,7 @@
                 "${workspaceFolder}"
             ],
             "defines": [
-                "str_t = std::string",
+                "str_t = char*",
                 "color_t = uint32_t",
                 "input_t = uint32_t"
             ],
