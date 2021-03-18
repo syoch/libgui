@@ -14,9 +14,9 @@ namespace GUI
         Widget(converterT converter, int x, int y, int w, int h);
         void setHidden(bool flag);
 
-        virtual void draw();
-        virtual void ontouch(Pos &pos);
-        virtual void oninput(InputData &input);
+        virtual void draw() = 0;
+        virtual void ontouch(Pos &pos) = 0;
+        virtual void oninput(InputData &input) = 0;
 
         Pos pos;
         Size size;
