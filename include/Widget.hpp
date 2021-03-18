@@ -18,6 +18,9 @@ namespace GUI
         virtual void ontouch(Pos &pos);
         virtual void oninput(InputData &input);
 
+        Pos pos;
+        Size size;
+
     private:
         converterT converter;
         bool isHidden;
