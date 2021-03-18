@@ -27,4 +27,11 @@ namespace GUI
             }
         }
     }
+    void Container::oninput(InputData &data)
+    {
+        for (auto &&widget : widgets)
+        {
+            widget.get().oninput(data);
+        }
+    }
 } // namespace GUI
