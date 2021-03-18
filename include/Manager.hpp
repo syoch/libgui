@@ -17,7 +17,7 @@ namespace GUI
 
     private:
         Vector<std::reference_wrapper<Widget>> widgets;
-    }
+    };
 } // namespace GUI
 
 #endif
