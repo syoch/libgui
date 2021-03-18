@@ -21,8 +21,10 @@ namespace GUI
         Pos pos;
         Size size;
 
-    private:
+    protected:
         converterT converter;
+
+    private:
         bool isHidden;
     };
 } // namespace GUI
