@@ -12,6 +12,7 @@ namespace GUI
     {
     public:
         using Widget::Widget;
+        ~Container();
         void draw() override;
         void ontouch(Pos &pos) override;
         void oninput(InputData &input) override;

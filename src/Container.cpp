@@ -1,7 +1,14 @@
 #include <Container.hpp>
-
+#include <iostream>
 namespace GUI
 {
+    Container::~Container()
+    {
+        for (auto &&widget : widgets)
+        {
+            delete widget;
+        }
+    }
     Container &Container::add(Widget &&widget)
     {
         widgets.emplace_back(widget);
