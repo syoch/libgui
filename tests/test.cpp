@@ -31,7 +31,7 @@ int main(int, char const *[])
 {
     auto mngr = new Manager();
 
-    auto button1 = Btn(0, 0, 100, 100);
+    auto button1 = new Btn(0, 0, 100, 100);
     mngr->add(button1);
 
     auto container1 = new Container(0, 100, 100, 100);
@@ -42,5 +42,7 @@ int main(int, char const *[])
     mngr->add(container1);
 
     mngr->draw();
+
+    delete mngr;
     return 0;
 }
