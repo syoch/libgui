@@ -14,6 +14,7 @@ namespace GUI
         void ontouch(Pos &pos);
         void oninput(InputData &input);
         Manager &add(Widget &&);
+        Manager &add(Widget &);
 
     private:
         Vector<std::reference_wrapper<Widget>> widgets;

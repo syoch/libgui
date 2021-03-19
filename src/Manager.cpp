@@ -7,6 +7,11 @@ namespace GUI
         widgets.emplace_back(widget);
         return *this;
     }
+    Manager &Manager::add(Widget &widget)
+    {
+        widgets.emplace_back(widget);
+        return *this;
+    }
 
     void Manager::draw()
     {

@@ -7,6 +7,11 @@ namespace GUI
         widgets.emplace_back(widget);
         return *this;
     }
+    Container &Container::add(Widget &widget)
+    {
+        widgets.emplace_back(widget);
+        return *this;
+    }
 
     void Container::draw()
     {
