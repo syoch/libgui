@@ -1,5 +1,5 @@
 #include <Manager.hpp>
-
+#include <iostream>
 namespace GUI
 {
     Manager &Manager::add(Widget &&widget)
@@ -10,6 +10,11 @@ namespace GUI
     Manager &Manager::add(Widget &widget)
     {
         widgets.emplace_back(widget);
+        return *this;
+    }
+    Manager &Manager::add(Widget *widget)
+    {
+        widgets.emplace_back(*widget);
         return *this;
     }
 

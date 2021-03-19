@@ -15,6 +15,7 @@ namespace GUI
         void oninput(InputData &input);
         Manager &add(Widget &&);
         Manager &add(Widget &);
+        Manager &add(Widget *);
 
     private:
         Vector<std::reference_wrapper<Widget>> widgets;
