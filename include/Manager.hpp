@@ -18,7 +18,7 @@ namespace GUI
         Manager &add(Widget *);
 
     private:
-        Vector<std::reference_wrapper<Widget>> widgets;
+        Vector<Widget *> widgets;
     };
 } // namespace GUI
 
