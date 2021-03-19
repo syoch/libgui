@@ -2,9 +2,10 @@
 
 namespace GUI
 {
-    void Manager::add(Widget &widget)
+    Manager &Manager::add(Widget &widget)
     {
         widgets.emplace_back(widget);
+        return *this;
     }
 
     void Manager::draw()
