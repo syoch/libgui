@@ -22,7 +22,6 @@ namespace GUI
     {
     public:
         Pos pos;
-        Size size;
         Color color;
     };
 
