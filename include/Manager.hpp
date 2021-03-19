@@ -10,6 +10,8 @@ namespace GUI
     class Manager
     {
     public:
+        ~Manager();
+
         void draw();
         void ontouch(Pos &pos);
         void oninput(InputData &input);

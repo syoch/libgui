@@ -2,6 +2,13 @@
 #include <iostream>
 namespace GUI
 {
+    Manager::~Manager()
+    {
+        for (auto &&widget : widgets)
+        {
+            delete widget;
+        }
+    }
     Manager &Manager::add(Widget &&widget)
     {
         widgets.emplace_back(&widget);
