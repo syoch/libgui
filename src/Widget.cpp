@@ -1,5 +1,6 @@
 #include <Widget.hpp>
 
+#include <Manager.hpp>
 #include <utils.hpp>
 
 namespace GUI
@@ -13,6 +14,10 @@ namespace GUI
     {
     }
     Widget::Widget(int x, int y, int w, int h)
+        : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
+    {
+    }
+    Widget::Widget(Manager &, int x, int y, int w, int h)
         : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
     {
     }
