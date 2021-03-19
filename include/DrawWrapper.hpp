@@ -17,7 +17,7 @@ namespace GUI
         bool rect4(DrawInfo, DrawInfo, DrawInfo, DrawInfo);
         bool triangle(DrawInfo, DrawInfo, DrawInfo);
         bool line(DrawInfo, DrawInfo);
-        bool circle(DrawInfo, DrawInfo, int);
+        bool circle(DrawInfo, DrawInfo);
     } // namespace render
 }
 
