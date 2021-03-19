@@ -1,6 +1,6 @@
 #! /usr/bin/python3
 import sys
-config = {
+defaultconfig = {
     "str_t":  "std::wstring",
     "color_t": "uint32_t",
     "input_t": "uint32_t",
@@ -41,4 +41,4 @@ def writeConfig(cfg):
 
 
 if __name__ == "__main__":
-    writeConfig()
+    writeConfig(defaultconfig)
