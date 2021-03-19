@@ -12,6 +12,7 @@ namespace GUI
     {
     public:
         Widget(converterT converter, int x, int y, int w, int h);
+        Widget(int x, int y, int w, int h);
         void setHidden(bool flag);
 
         virtual void draw() = 0;
