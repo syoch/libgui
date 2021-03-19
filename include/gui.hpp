@@ -1,7 +1,3 @@
-#include "Types.hpp"
-#include "DrawWrapper.hpp"
-#include "Widget.hpp"
-#include "Container.hpp"
-#include "Root.hpp"
-#include "Scroll.hpp"
-#include "Label.hpp"
+#include <Widget.hpp>
+#include <Container.hpp>
+#include <Manager.hpp>

@@ -1,39 +1,31 @@
 #pragma once
-#ifndef LIBGUI_SIZE
-#define LIBGUI_SIZE
+#ifndef LIBGUI_TYPES
+#define LIBGUI_TYPES
+
+#include <functional>
+#include "config.h"
 
 namespace GUI
 {
-    class Point
+    class Pos
     {
     public:
-        Point(int x = 0, int y = 0);
-
-        int x;
-        int y;
+        int x, y;
     };
     class Size
     {
     public:
-        Size(int width = 0, int height = 0);
+        int w, h;
+    };
 
-        int width;
-        int height;
-    };
-    class Color
+    class DrawInfo
     {
     public:
-        Color(int r = 0, int g = 0, int b = 0, int a = 0);
-        int r, g, b;
-        int a;
-    };
-    class DrawPoint
-    {
-    public:
-        DrawPoint(Point point = (Point){}, Color color = (Color){});
-        Point point;
+        Pos pos;
         Color color;
     };
-}
+
+    using converterT = std::function<Pos &(Pos &)>;
+} // namespace GUI
 
 #endif

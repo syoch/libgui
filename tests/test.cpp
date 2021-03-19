@@ -1,28 +1,48 @@
 #include <gui.hpp>
 #include <engines/debug.hpp>
 using namespace GUI;
-class Btn : public Widget
+namespace GUI
 {
-private:
-    void draw()
+    class Btn : public Widget
     {
-        draw_rect((Point){0, 0}, (Point){size.width / 2, size.height / 2});
-    }
+    public:
+        using Widget::Widget;
+        void ontouch(Pos &) override;
+        void oninput(InputData &) override;
+        void draw() override;
+    };
 
-public:
-    using Widget::Widget;
-    void onTouch(int, int)
+    void Btn::ontouch(Pos &)
     {
         std::wcout << "touched btn" << std::endl;
     }
-};
+    void Btn::oninput(InputData &)
+    {
+        std::wcout << "input" << std::endl;
+    }
+    void Btn::draw()
+    {
+        render::circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
+        std::wcout << "hi" << std::endl;
+    }
+} // namespace GUI
+
 int main(int, char const *[])
 {
-    Root root;
+    auto mngr = new Manager();
 
-    Label<std::string>(root, 0, 0, 100, 100, "hi");
+    auto button1 = new Btn(0, 0, 100, 100);
+    mngr->add(button1);
 
-    root._draw();
+    auto container1 = new Container(0, 100, 100, 100);
+    auto button2 = new Btn(0, 0, 50, 50);
 
+    container1->add(button2);
+
+    mngr->add(container1);
+
+    mngr->draw();
+
+    delete mngr;
     return 0;
 }

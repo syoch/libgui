@@ -1,28 +1,28 @@
-#include <Container.hpp>
+#include <Manager.hpp>
 #include <iostream>
 namespace GUI
 {
-    Container::~Container()
+    Manager::~Manager()
     {
         for (auto &&widget : widgets)
         {
             delete widget;
         }
     }
-    Container &Container::add(Widget *widget)
+    Manager &Manager::add(Widget *widget)
     {
         widgets.emplace_back(widget);
         return *this;
     }
 
-    void Container::draw()
+    void Manager::draw()
     {
         for (auto widget : widgets)
         {
             widget->draw();
         }
     }
-    void Container::ontouch(Pos &data)
+    void Manager::ontouch(Pos &data)
     {
         for (auto &&widget : widgets)
         {
@@ -35,7 +35,7 @@ namespace GUI
             }
         }
     }
-    void Container::oninput(InputData &data)
+    void Manager::oninput(InputData &data)
     {
         for (auto &&widget : widgets)
         {
