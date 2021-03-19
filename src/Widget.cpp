@@ -21,6 +21,9 @@ namespace GUI
         : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
     {
     }
+    Widget::~Widget()
+    {
+    }
     void Widget::setHidden(bool flag)
     {
         isHidden = flag;

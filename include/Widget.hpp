@@ -16,6 +16,8 @@ namespace GUI
         Widget(converterT converter, int x, int y, int w, int h);
         Widget(int x, int y, int w, int h);
         Widget(Manager &, int x, int y, int w, int h);
+        virtual ~Widget();
+
         void setHidden(bool flag);
 
         virtual void draw() = 0;
