@@ -22,14 +22,25 @@ namespace GUI
     }
     void Btn::draw()
     {
+        render::circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
         std::wcout << "hi" << std::endl;
     }
 } // namespace GUI
 
 int main(int, char const *[])
 {
-    Manager mngr;
-    mngr.add(new Btn(mngr, 0, 0, 100, 100));
-    mngr.draw();
+    auto mngr = new Manager();
+
+    auto button1 = Btn(0, 0, 100, 100);
+    mngr->add(button1);
+
+    auto container1 = new Container(0, 100, 100, 100);
+    auto button2 = new Btn(0, 0, 50, 50);
+
+    container1->add(button2);
+
+    mngr->add(container1);
+
+    mngr->draw();
     return 0;
 }
