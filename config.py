@@ -1,25 +1,30 @@
 #! /usr/bin/python3
+import sys
+config = {
+    "str_t":  "std::wstring",
+    "color_t": "uint32_t",
+    "input_t": "uint32_t",
+    "vec_t": "std::vector",
+    # includes
+    "requiredHeaders": [
+        "<vector>",
+        "<string>"
+    ]
+}
 
-# Type Config
-str_t = "std::wstring"
-color_t = "uint32_t"
-input_t = "uint32_t"
-vec_t = "std::vector"
-# includes
-requiredHeaders = [
-    "<vector>",
-    "<string>"
-]
 
-
-def writeConfig():
+def writeConfig(cfg):
+    str_t = cfg["str_t"]
+    color_t = cfg["color_t"]
+    input_t = cfg["input_t"]
+    vec_t = cfg["vec_t"]
     fp = open("include/config.h", "w")
     fp.writelines([
         f"#pragma once\n",
         f"#ifndef LIBGUI_CONFIG\n",
         f"#define LIBGUI_CONFIG\n",
         f"\n",
-        *[f"#include {a}\n" for a in requiredHeaders],
+        *[f"#include {a}\n" for a in cfg["requiredHeaders"]],
         f"\n",
         f"namespace GUI\n",
         f"{{\n",
