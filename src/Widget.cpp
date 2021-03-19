@@ -1,5 +1,7 @@
 #include <Widget.hpp>
 
+#include <utils.hpp>
+
 namespace GUI
 {
     Widget::Widget(converterT conv, int x, int y, int w, int h, bool isHidden)
@@ -7,11 +9,11 @@ namespace GUI
     {
     }
     Widget::Widget(converterT converter, int x, int y, int w, int h)
-        : pos((Pos){x, y}), size((Size){w, h}), converter(converter)
+        : Widget::Widget(converter, x, y, w, h, false)
     {
     }
     Widget::Widget(int x, int y, int w, int h)
-        : pos((Pos){x, y}), size((Size){w, h})
+        : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
     {
     }
     void Widget::setHidden(bool flag)
