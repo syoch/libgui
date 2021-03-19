@@ -15,8 +15,6 @@ namespace GUI
         void draw();
         void ontouch(Pos &pos);
         void oninput(InputData &input);
-        Manager &add(Widget &&);
-        Manager &add(Widget &);
         Manager &add(Widget *);
 
     private:
