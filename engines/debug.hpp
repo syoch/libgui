@@ -96,7 +96,19 @@ namespace GUI
                        << std::endl;
             return true;
         }
-
+        bool circle(DrawInfo A, DrawInfo B)
+        {
+            std::wcout << "Draw circ: "
+                       << "(" << A.pos.x << ", " << A.pos.y << ")"
+                       << "[" << A.color << ", "
+                       << "] "
+                       << ", "
+                       << "(" << B.pos.x << ", " << B.pos.y << ")"
+                       << "[" << B.color << ", "
+                       << "] "
+                       << std::endl;
+            return true;
+        }
     } // namespace render
 
 }
