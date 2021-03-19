@@ -2,9 +2,10 @@
 
 namespace GUI
 {
-    void Container::add(Widget &widget)
+    Container &Container::add(Widget &&widget)
     {
         widgets.emplace_back(widget);
+        return *this;
     }
 
     void Container::draw()

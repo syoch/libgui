@@ -15,7 +15,7 @@ namespace GUI
         void draw() override;
         void ontouch(Pos &pos) override;
         void oninput(InputData &input) override;
-        void add(Widget &);
+        Container &add(Widget &&);
 
     private:
         Vector<std::reference_wrapper<Widget>> widgets;
