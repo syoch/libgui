@@ -5,16 +5,8 @@
 
 namespace GUI
 {
-    Widget::Widget(converterT conv, int x, int y, int w, int h, bool isHidden)
+    Widget::Widget(int x, int y, int w, int h, converterT conv, bool isHidden)
         : pos((Pos){x, y}), size((Size){w, h}), converter(conv), isHidden(isHidden)
-    {
-    }
-    Widget::Widget(int x, int y, int w, int h)
-        : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
-    {
-    }
-    Widget::Widget(Manager &, int x, int y, int w, int h)
-        : Widget::Widget(utils::defaultConverter, x, y, w, h, false)
     {
     }
     Widget::~Widget()

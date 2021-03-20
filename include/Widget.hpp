@@ -6,15 +6,22 @@
 
 #include <Types.hpp>
 
+namespace utils
+{
+    GUI::Pos &defaultConverter(GUI::Pos &);
+} // namespace utils
+
 namespace GUI
 {
     class Manager;
     class Widget
     {
     public:
-        Widget(converterT conv, int x, int y, int w, int h, bool isHidden = false);
-        Widget(int x, int y, int w, int h);
-        Widget(Manager &, int x, int y, int w, int h);
+        Widget(
+            int x, int y, int w, int h,
+            converterT conv = utils::defaultConverter,
+            bool isHidden = false);
+
         virtual ~Widget();
 
         void setHidden(bool flag);
