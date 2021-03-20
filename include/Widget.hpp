@@ -12,8 +12,7 @@ namespace GUI
     class Widget
     {
     public:
-        Widget(converterT conv, int x, int y, int w, int h, bool isHidden);
-        Widget(converterT converter, int x, int y, int w, int h);
+        Widget(converterT conv, int x, int y, int w, int h, bool isHidden = false);
         Widget(int x, int y, int w, int h);
         Widget(Manager &, int x, int y, int w, int h);
         virtual ~Widget();
