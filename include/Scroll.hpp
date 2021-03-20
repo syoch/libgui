@@ -15,8 +15,9 @@ namespace GUI
         void right(int dy);
         void left(int dy);
 
+        Pos conv(Pos src);
+
     private:
-        Pos convert(Pos src);
         int yOffset;
         int xOffset;
     };

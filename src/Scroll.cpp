@@ -1,10 +1,10 @@
 #include <Scroll.hpp>
 #include <DrawWrapper.hpp>
 
-GUI::Pos GUI::Scroll::convert(GUI::Pos src)
+GUI::Pos GUI::Scroll::conv(GUI::Pos src)
 {
-    src.y += yOffset;
-    src.x += xOffset;
+    src.y += yOffset + pos.y;
+    src.x += xOffset + pos.x;
 
     if (src.x > size.w)
     {
