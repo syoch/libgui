@@ -6,13 +6,13 @@
 
 #include <Types.hpp>
 
-namespace utils
-{
-    GUI::Pos &defaultConverter(GUI::Pos &);
-} // namespace utils
-
 namespace GUI
 {
+    namespace utils
+    {
+        GUI::Pos &defaultConverter(GUI::Pos &);
+    } // namespace utils
+
     class Manager;
     class Widget
     {
