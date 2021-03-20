@@ -31,18 +31,13 @@ int main(int, char const *[])
 {
     auto mngr = new Manager();
 
-    auto button1 = new Btn(0, 0, 100, 100);
-    mngr->add(button1);
+    auto scr1 = new Scroll(mngr, 50, 0, 50, 50);
+    auto btn1 = new Btn(scr1, 0, 50, 50, 50);
+    scr1->add(btn1);
 
-    auto container1 = new Container(0, 100, 100, 100);
-    auto button2 = new Btn(0, 0, 50, 50);
-
-    container1->add(button2);
-
-    mngr->add(container1);
+    mngr->add(scr1);
 
     mngr->draw();
-
     delete mngr;
     return 0;
 }
