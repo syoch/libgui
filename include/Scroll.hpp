@@ -9,6 +9,7 @@ namespace GUI
 {
     class Scroll : public Container
     {
+    public:
         using Container::Container;
         void down(int dy);
         void up(int dy);
