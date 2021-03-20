@@ -10,7 +10,6 @@ namespace GUI
     class Scroll : public Container
     {
         using Container::Container;
-        Scroll(int x, int y, int w, int h);
         void down(int dy);
         void up(int dy);
         void right(int dy);

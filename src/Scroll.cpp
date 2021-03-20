@@ -17,11 +17,6 @@ GUI::Pos GUI::Scroll::convert(GUI::Pos src)
 
     return src;
 }
-
-GUI::Scroll::Scroll(int x, int y, int w, int h)
-    : GUI::Container(x, y, w, h), yOffset(0), xOffset(0)
-{
-}
 void GUI::Scroll::up(int dy)
 {
     yOffset -= dy;
