@@ -28,6 +28,7 @@ def writeConfig(cfg):
         f"\n",
         f"namespace GUI\n",
         f"{{\n",
+        f"    class Widget;\n",
         f"    using Str = {str_t};\n",
         f"    using Color = {color_t};\n",
         f"    using InputData = {input_t};\n",
