@@ -30,18 +30,13 @@ namespace GUI
 int main(int, char const *[])
 {
     auto mgr = new Manager();
-    auto bt1 = new Btn(50, 30, 10, 10);
-    mgr->add(bt1);
+    mgr->add<Btn>(50, 30, 10, 10);
 
-    auto container = new Container(10, 10, 50, 50);
-    auto bt2 = new Btn(20, 20, 50, 50);
-    container->add(bt2);
+    auto con1 = mgr->add<Container>(10, 10, 50, 50);
+    con1->add<Btn>(20, 20, 50, 50);
 
-    auto con2 = new Container(20, 20, 50, 50);
-    auto bt3 = new Btn(20, 20, 50, 50);
-    con2->add(bt3);
-    container->add(con2);
-    mgr->add(container);
+    auto con2 = con1->add<Container>(20, 20, 50, 50);
+    con2->add<Btn>(20, 20, 50, 50);
 
     mgr->draw();
 
