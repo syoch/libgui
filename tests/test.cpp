@@ -1,5 +1,7 @@
 #include <gui.hpp>
 #include <engines/debug.hpp>
+#include <iostream>
+
 using namespace GUI;
 namespace GUI
 {
@@ -41,6 +43,5 @@ int main(int, char const *[])
     mgr.add(container);
 
     mgr.draw();
-    delete mngr;
     return 0;
 }
