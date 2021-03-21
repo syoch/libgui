@@ -4,7 +4,7 @@ defaultconfig = {
     "str_t":  "std::wstring",
     "color_t": "uint32_t",
     "input_t": "uint32_t",
-    "widVec_t": "std::vector<std::reference_wrapper<Widget>>",
+    "widVec_t": "std::vector<Widget*>",
     # includes
     "requiredHeaders": [
         "<vector>",
