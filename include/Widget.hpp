@@ -32,6 +32,16 @@ namespace GUI
         Size size;
         converterT converter;
 
+        // Engine wrapper
+        bool init();
+        bool exit();
+        bool text(DrawInfo, Str);
+        bool rect2(DrawInfo, DrawInfo);
+        bool rect4(DrawInfo, DrawInfo, DrawInfo, DrawInfo);
+        bool triangle(DrawInfo, DrawInfo, DrawInfo);
+        bool line(DrawInfo, DrawInfo);
+        bool circle(DrawInfo, DrawInfo);
+
     private:
         bool isHidden;
     };
