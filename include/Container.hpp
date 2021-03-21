@@ -16,7 +16,7 @@ namespace GUI
         void draw() override;
         void ontouch(Pos &pos) override;
         void oninput(InputData &input) override;
-        Container &add(Widget &);
+        Container &add(Widget *);
 
     private:
         WidVec widgets;
