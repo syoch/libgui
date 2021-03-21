@@ -29,15 +29,18 @@ namespace GUI
 
 int main(int, char const *[])
 {
-    auto mngr = new Manager();
+    Manager mgr;
+    Btn bt(50, 30, 10, 10);
+    mgr.add(bt);
 
-    auto scr1 = new Scroll(mngr, 50, 0, 50, 50);
-    auto btn1 = new Btn(scr1, 0, 50, 50, 50);
-    scr1->add(btn1);
+    Container container(10, 10, 50, 50);
 
-    mngr->add(scr1);
+    Btn bt2(10, 10, 50, 50);
+    container.add(bt2);
 
-    mngr->draw();
+    mgr.add(container);
+
+    mgr.draw();
     delete mngr;
     return 0;
 }
