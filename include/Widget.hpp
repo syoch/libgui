@@ -13,7 +13,6 @@ namespace GUI
         GUI::Pos &defaultConverter(GUI::Pos &);
     } // namespace utils
 
-    class Manager;
     class Widget
     {
     public:
