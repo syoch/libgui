@@ -1,6 +1,5 @@
-#include <gui.hpp>
-#include <engines/debug.hpp>
 #include <iostream>
+#include <gui.hpp>
 
 using namespace GUI;
 namespace GUI
@@ -25,23 +24,24 @@ namespace GUI
     void Btn::draw()
     {
         render::circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
-        std::wcout << "hi" << std::endl;
+        std::wcout << "Btn hi   " << pos.x << " " << pos.y << " " << size.w << " " << size.h << std::endl;
     }
 } // namespace GUI
 
 int main(int, char const *[])
 {
-    Manager mgr;
-    Btn bt(50, 30, 10, 10);
-    mgr.add(bt);
+    auto mgr = new Manager();
+    auto bt1 = new Btn(50, 30, 10, 10);
+    mgr->add(bt1);
 
-    Container container(10, 10, 50, 50);
+    auto container = new Container(10, 10, 50, 50);
+    auto bt2 = new Btn(20, 20, 50, 50);
+    container->add(bt2);
 
-    Btn bt2(10, 10, 50, 50);
-    container.add(bt2);
+    mgr->add(container);
 
-    mgr.add(container);
+    mgr->draw();
 
-    mgr.draw();
+    delete mgr;
     return 0;
 }
