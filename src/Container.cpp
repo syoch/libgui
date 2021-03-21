@@ -11,7 +11,15 @@ namespace GUI
     Container &Container::add(Widget *widget)
     {
         widgets.emplace_back(widget);
+        using namespace std::placeholders;
+        widget->converter = std::bind(this, _1);
         return *this;
+    }
+    Pos &Container::converterForWidget(Pos &src)
+    {
+        converter(src);
+        src.x += pos.x;
+        src.y += pos.y;
     }
 
     void Container::draw()

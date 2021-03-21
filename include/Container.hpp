@@ -18,6 +18,8 @@ namespace GUI
         void oninput(InputData &input) override;
         Container &add(Widget *);
 
+        Pos &converterForWidget(Pos &);
+
     private:
         WidVec widgets;
     };
