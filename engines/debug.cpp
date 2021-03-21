@@ -30,8 +30,20 @@ namespace GUI
                        << std::endl;
             return true;
         }
-
-        bool rect(DrawInfo A, DrawInfo B, DrawInfo C, DrawInfo D)
+        bool rect2(DrawInfo A, DrawInfo B)
+        {
+            std::wcout << "Draw rec2: "
+                       << "(" << A.pos.x << ", " << A.pos.y << ")"
+                       << "[" << A.color << ", "
+                       << "] "
+                       << ", "
+                       << "(" << B.pos.x << ", " << B.pos.y << ")"
+                       << "[" << B.color << ", "
+                       << "] "
+                       << std::endl;
+            return true;
+        }
+        bool rect4(DrawInfo A, DrawInfo B, DrawInfo C, DrawInfo D)
         {
             std::wcout << "Draw rect: "
                        << "(" << A.pos.x << ", " << A.pos.y << ")"
@@ -53,28 +65,13 @@ namespace GUI
             return true;
         }
 
-        bool text(int row, int column, char *text, Color color)
+        bool text(DrawInfo info, Str str)
         {
             std::wcout << "Draw text: "
-                       << row << "," << column << " "
-                       << "[" << text << "] "
-                       << "[" << color << "]" << std::endl;
+                       << info.pos.x << "," << info.pos.y << " "
+                       << "[" << str << "] "
+                       << "[" << info.color << "]" << std::endl;
             ;
-            return true;
-        }
-        bool textShadow(int row, int column, char *text, Color color)
-        {
-            std::wcout << "Draw Stex: "
-                       << row << "," << column << " "
-                       << "[" << text << "] "
-                       << "[" << color << "]" << std::endl;
-            return true;
-        }
-        bool translate(float x, float y)
-        {
-            std::wcout << "Draw tran: "
-                       << x << ", " << y
-                       << std::endl;
             return true;
         }
         bool triangle(DrawInfo A, DrawInfo B, DrawInfo C)
