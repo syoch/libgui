@@ -3,23 +3,10 @@
 #define LIBGUI_MANAGER
 
 #include <Types.hpp>
-#include <Widget.hpp>
 
 namespace GUI
 {
-    class Manager
-    {
-    public:
-        ~Manager();
-
-        void draw();
-        void ontouch(Pos &pos);
-        void oninput(InputData &input);
-        Manager &add(Widget *);
-
-    private:
-        Vector<Widget *> widgets;
-    };
+    using Manager = class Container;
 } // namespace GUI
 
 #endif
