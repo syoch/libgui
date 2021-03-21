@@ -4,7 +4,7 @@ defaultconfig = {
     "str_t":  "std::wstring",
     "color_t": "uint32_t",
     "input_t": "uint32_t",
-    "vec_t": "std::vector",
+    "widVec_t": "std::vector<std::reference_wrapper<Widget>>",
     # includes
     "requiredHeaders": [
         "<vector>",
@@ -17,7 +17,7 @@ def writeConfig(cfg):
     str_t = cfg["str_t"]
     color_t = cfg["color_t"]
     input_t = cfg["input_t"]
-    vec_t = cfg["vec_t"]
+    widVec_t = cfg["widVec_t"]
     fp = open("include/config.h", "w")
     fp.writelines([
         f"#pragma once\n",
@@ -31,8 +31,7 @@ def writeConfig(cfg):
         f"    using Str = {str_t};\n",
         f"    using Color = {color_t};\n",
         f"    using InputData = {input_t};\n",
-        f"    template<typename T>\n"
-        f"    using Vector = {vec_t}<T>;\n",
+        f"    using WidVec = {widVec_t};\n",
         f"}} // namespace GUI\n",
         f"\n",
         f"#endif\n"
