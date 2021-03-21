@@ -33,7 +33,7 @@ namespace GUI
         a.pos.y += pos.y;
         converter(b.pos);
         b.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         return render::rect2(a, b);
     }
     bool Widget::rect4(DrawInfo a, DrawInfo b, DrawInfo c, DrawInfo d)
@@ -43,13 +43,13 @@ namespace GUI
         a.pos.y += pos.y;
         converter(b.pos);
         b.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         converter(c.pos);
         c.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         converter(d.pos);
         d.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         return render::rect4(a, b, c, d);
     }
     bool Widget::triangle(DrawInfo a, DrawInfo b, DrawInfo c)
@@ -59,10 +59,10 @@ namespace GUI
         a.pos.y += pos.y;
         converter(b.pos);
         b.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         converter(c.pos);
         c.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         return render::triangle(a, b, c);
     }
     bool Widget::line(DrawInfo a, DrawInfo b)
@@ -72,7 +72,7 @@ namespace GUI
         a.pos.y += pos.y;
         converter(b.pos);
         b.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         return render::line(a, b);
     }
     bool Widget::circle(DrawInfo a, DrawInfo b)
@@ -82,7 +82,7 @@ namespace GUI
         a.pos.y += pos.y;
         converter(b.pos);
         b.pos.x += pos.x;
-        a.pos.y += pos.y;
+        b.pos.y += pos.y;
         return render::circle(a, b);
     }
 } // namespace GUI
