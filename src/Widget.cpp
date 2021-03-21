@@ -5,9 +5,10 @@
 
 namespace GUI
 {
-    Widget::Widget(int x, int y, int w, int h, converterT conv, bool isHidden)
-        : pos((Pos){x, y}), size((Size){w, h}), converter(conv), isHidden(isHidden)
+    Widget::Widget(int x, int y, int w, int h, bool isHidden)
+        : pos((Pos){x, y}), size((Size){w, h}), isHidden(isHidden)
     {
+        converter = converterT(&utils::defaultConverter);
     }
     Widget::~Widget()
     {
