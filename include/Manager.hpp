@@ -3,10 +3,10 @@
 #define LIBGUI_MANAGER
 
 #include <Types.hpp>
-
+#include <Container.hpp>
 namespace GUI
 {
-    using Manager = class Container;
+    using Manager = Container;
 } // namespace GUI
 
 #endif
