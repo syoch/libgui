@@ -16,7 +16,17 @@ namespace GUI
         void draw() override;
         void ontouch(Pos &pos) override;
         void oninput(InputData &input) override;
-        Container &add(Widget *);
+        template <typename T>
+        T *add(int x, int y, int w, int h)
+        {
+            T *obj = new T(x, y, w, h);
+            widgets.emplace_back(obj);
+
+            using namespace std::placeholders;
+
+            obj->converter = static_cast<converterT>(std::bind(&GUI::Container::converterForWidget, this, std::placeholders::_1));
+            return obj;
+        }
 
         Pos &converterForWidget(Pos &);
 
