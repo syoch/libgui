@@ -25,7 +25,7 @@ namespace GUI
         Color color;
     };
 
-    using converterT = std::function<Pos &(Pos &)>;
+    using converterT = std::_Bind<GUI::Container *(std::_Placeholder<1>)> > ;
 } // namespace GUI
 
 #endif
