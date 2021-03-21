@@ -19,7 +19,6 @@ namespace GUI
     public:
         Widget(
             int x = 0, int y = 0, int w = 0, int h = 0,
-            converterT conv = utils::defaultConverter,
             bool isHidden = false);
 
         virtual ~Widget();
@@ -32,8 +31,6 @@ namespace GUI
 
         Pos pos;
         Size size;
-
-    protected:
         converterT converter;
 
     private:
