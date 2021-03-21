@@ -20,6 +20,7 @@ namespace GUI
         converter(src);
         src.x += pos.x;
         src.y += pos.y;
+        return src;
     }
 
     void Container::draw()
