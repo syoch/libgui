@@ -8,8 +8,6 @@ namespace GUI
 {
     namespace render
     {
-        extern const bool isRelative;
-
         bool init();
         bool exit();
         bool text(DrawInfo, Str);

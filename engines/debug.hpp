@@ -6,7 +6,6 @@ namespace GUI
 {
     namespace render
     {
-        const bool isRelative = true;
         bool begin()
         {
             std::wcout << "draw begin" << std::endl;
