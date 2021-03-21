@@ -1,5 +1,4 @@
 #include <Container.hpp>
-#include <iostream>
 namespace GUI
 {
     Container::~Container()
