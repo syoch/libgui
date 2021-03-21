@@ -24,7 +24,6 @@ namespace GUI
     void Btn::draw()
     {
         circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
-        std::wcout << "Btn hi   " << pos.x << " " << pos.y << " " << size.w << " " << size.h << std::endl;
     }
 } // namespace GUI
 
