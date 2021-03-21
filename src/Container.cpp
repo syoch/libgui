@@ -12,7 +12,7 @@ namespace GUI
     {
         widgets.emplace_back(widget);
         using namespace std::placeholders;
-        widget->converter = std::bind(this, _1);
+        widget->converter = static_cast<converterT>(std::bind(&GUI::Container::converterForWidget, this, std::placeholders::_1));
         return *this;
     }
     Pos &Container::converterForWidget(Pos &src)
