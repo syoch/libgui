@@ -9,7 +9,8 @@ defaultconfig = {
     "requiredHeaders": [
         "<vector>",
         "<string>"
-    ]
+    ],
+    "dest": "include/config.h"
 }
 
 
@@ -18,7 +19,7 @@ def writeConfig(cfg):
     color_t = cfg["color_t"]
     input_t = cfg["input_t"]
     widVec_t = cfg["widVec_t"]
-    fp = open("include/config.h", "w")
+    fp = open(cfg["dest"], "w")
     fp.writelines([
         f"#pragma once\n",
         f"#ifndef LIBGUI_CONFIG\n",
