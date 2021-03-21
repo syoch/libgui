@@ -23,7 +23,7 @@ namespace GUI
     }
     void Btn::draw()
     {
-        render::circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
+        circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
         std::wcout << "Btn hi   " << pos.x << " " << pos.y << " " << size.w << " " << size.h << std::endl;
     }
 } // namespace GUI
@@ -38,6 +38,10 @@ int main(int, char const *[])
     auto bt2 = new Btn(20, 20, 50, 50);
     container->add(bt2);
 
+    auto con2 = new Container(20, 20, 50, 50);
+    auto bt3 = new Btn(20, 20, 50, 50);
+    con2->add(bt3);
+    container->add(con2);
     mgr->add(container);
 
     mgr->draw();
