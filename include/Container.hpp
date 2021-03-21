@@ -16,10 +16,10 @@ namespace GUI
         void draw() override;
         void ontouch(Pos &pos) override;
         void oninput(InputData &input) override;
-        template <typename T>
-        T *add(int x, int y, int w, int h)
+        template <typename T, typename... Args>
+        T *add(Args... args)
         {
-            T *obj = new T(x, y, w, h);
+            T *obj = new T(args...);
             widgets.emplace_back(obj);
 
             using namespace std::placeholders;
