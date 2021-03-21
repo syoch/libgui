@@ -19,7 +19,7 @@ namespace GUI
         Container &add(Widget &);
 
     private:
-        Vector<Widget *> widgets;
+        WidVec widgets;
     };
 } // namespace GUI
 
