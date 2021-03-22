@@ -20,7 +20,7 @@ namespace GUI
     {
         for (auto widget : widgets)
         {
-            widget->draw();
+            widget->_draw();
         }
     }
     void Container::ontouch(Pos &data)
