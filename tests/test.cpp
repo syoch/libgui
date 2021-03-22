@@ -30,7 +30,7 @@ namespace GUI
 int main(int, char const *[])
 {
     auto mgr = new Manager();
-    mgr->add<Btn>(50, 30, 10, 10);
+    mgr->add<Btn>(50, 30, 10, 10, true);
 
     auto con1 = mgr->add<Container>(10, 10, 50, 50);
     con1->add<Btn>(20, 20, 50, 50);
