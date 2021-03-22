@@ -1,5 +1,5 @@
 // A debug engine for wiiu-libgui
-#include <DrawWrapper.hpp>
+#include <GUI/DrawWrapper.hpp>
 #include <iostream>
 
 namespace GUI
