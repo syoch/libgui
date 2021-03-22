@@ -2,8 +2,8 @@
 #ifndef LIBGUI_MANAGER
 #define LIBGUI_MANAGER
 
-#include <Types.hpp>
-#include <Container.hpp>
+#include <GUI/Types.hpp>
+#include <GUI/Container.hpp>
 namespace GUI
 {
     using Manager = Container;

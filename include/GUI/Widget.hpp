@@ -4,7 +4,7 @@
 
 #include <functional>
 
-#include <Types.hpp>
+#include <GUI/Types.hpp>
 
 namespace GUI
 {

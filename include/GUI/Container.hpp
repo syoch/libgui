@@ -4,7 +4,7 @@
 
 #include <functional>
 
-#include <Widget.hpp>
+#include <GUI/Widget.hpp>
 
 namespace GUI
 {

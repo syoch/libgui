@@ -2,7 +2,7 @@
 #ifndef LIBGUI_DRAW_WRAPPER
 #define LIBGUI_DRAW_WRAPPER
 
-#include <Types.hpp>
+#include <GUI/Types.hpp>
 
 namespace GUI
 {

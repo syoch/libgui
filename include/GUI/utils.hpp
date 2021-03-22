@@ -2,7 +2,7 @@
 #ifndef LIBGUI_UTILS_HPP
 #define LIBGUI_UTILS_HPP
 
-#include <Types.hpp>
+#include <GUI/Types.hpp>
 
 namespace GUI
 {
