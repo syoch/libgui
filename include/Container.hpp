@@ -31,7 +31,7 @@ namespace GUI
         template <typename T>
         T *get(size_t i)
         {
-            return widgets[i];
+            return static_cast<T *>(widgets[i]);
         }
 
         Pos &converterForWidget(Pos &);
