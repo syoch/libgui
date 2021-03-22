@@ -1,5 +1,5 @@
-#include <Scroll.hpp>
-#include <DrawWrapper.hpp>
+#include <GUI/Scroll.hpp>
+#include <GUI/DrawWrapper.hpp>
 
 GUI::Pos GUI::Scroll::conv(GUI::Pos src)
 {

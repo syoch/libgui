@@ -1,8 +1,8 @@
-#include <Widget.hpp>
+#include <GUI/Widget.hpp>
 
-#include <Manager.hpp>
-#include <utils.hpp>
-#include <DrawWrapper.hpp>
+#include <GUI/Manager.hpp>
+#include <GUI/utils.hpp>
+#include <GUI/DrawWrapper.hpp>
 
 namespace GUI
 {
