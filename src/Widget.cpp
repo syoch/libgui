@@ -18,7 +18,13 @@ namespace GUI
     {
         isHidden = flag;
     }
-
+    void Widget::_draw()
+    {
+        if (!isHidden)
+        {
+            draw();
+        }
+    }
     bool Widget::text(DrawInfo a, Str str)
     {
         converter(a.pos);
