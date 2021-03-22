@@ -28,6 +28,12 @@ namespace GUI
             return obj;
         }
 
+        template <typename T>
+        T *get(size_t i)
+        {
+            return widgets[i];
+        }
+
         Pos &converterForWidget(Pos &);
 
     private:
