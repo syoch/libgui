@@ -52,10 +52,10 @@ namespace GUI
         b.pos.y += pos.y;
         converter(c.pos);
         c.pos.x += pos.x;
-        b.pos.y += pos.y;
+        c.pos.y += pos.y;
         converter(d.pos);
         d.pos.x += pos.x;
-        b.pos.y += pos.y;
+        d.pos.y += pos.y;
         return render::rect4(a, b, c, d);
     }
     bool Widget::triangle(DrawInfo a, DrawInfo b, DrawInfo c)
@@ -68,7 +68,7 @@ namespace GUI
         b.pos.y += pos.y;
         converter(c.pos);
         c.pos.x += pos.x;
-        b.pos.y += pos.y;
+        c.pos.y += pos.y;
         return render::triangle(a, b, c);
     }
     bool Widget::line(DrawInfo a, DrawInfo b)
