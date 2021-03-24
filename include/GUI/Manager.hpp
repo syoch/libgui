@@ -6,7 +6,11 @@
 #include <GUI/Container.hpp>
 namespace GUI
 {
-    using Manager = Container;
+    class Manager : public Container
+    {
+    public:
+        using Container::Container;
+    };
 } // namespace GUI
 
 #endif
