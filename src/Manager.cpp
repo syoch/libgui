@@ -2,7 +2,7 @@
 #include <GUI/DrawWrapper.hpp>
 namespace GUI
 {
-    void Manager::draw()
+    void Manager::render()
     {
         render::init();
         Container::_draw();
