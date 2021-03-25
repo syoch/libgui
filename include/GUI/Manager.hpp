@@ -10,6 +10,7 @@ namespace GUI
     {
     public:
         using Container::Container;
+        void draw() override;
     };
 } // namespace GUI
 
