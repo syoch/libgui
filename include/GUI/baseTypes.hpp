@@ -13,6 +13,18 @@ namespace GUI
     public:
         int w, h;
     };
+
+    struct TouchEvent
+    {
+        GUI::Pos pos;
+        enum Type
+        {
+            START,
+            MOVE,
+            END
+        } type;
+        int _istouched;
+    };
 } // namespace GUI
 
 #endif
