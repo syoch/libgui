@@ -24,15 +24,15 @@ namespace GUI
             widget->_draw();
         }
     }
-    void Container::ontouch(Pos &data)
+    void Container::ontouch(TouchEvent &data)
     {
         for (auto &&widget : widgets)
         {
-            if ((widget->pos.x <= data.x && data.x <= widget->pos.x + widget->size.w) ||
-                (widget->pos.y <= data.y && data.y <= widget->pos.y + widget->size.h))
+            if ((widget->pos.x <= data.pos.x && data.pos.x <= widget->pos.x + widget->size.w) ||
+                (widget->pos.y <= data.pos.y && data.pos.y <= widget->pos.y + widget->size.h))
             {
-                data.x -= widget->pos.x;
-                data.y -= widget->pos.y;
+                data.pos.x -= widget->pos.x;
+                data.pos.y -= widget->pos.y;
                 widget->ontouch(data);
             }
         }
