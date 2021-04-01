@@ -3,21 +3,12 @@
 #define LIBGUI_TYPES
 
 #include <functional>
+#include "baseTypes.hpp"
+
 #include "config.h"
 
 namespace GUI
 {
-    class Pos
-    {
-    public:
-        int x, y;
-    };
-    class Size
-    {
-    public:
-        int w, h;
-    };
-
     class DrawInfo
     {
     public:
