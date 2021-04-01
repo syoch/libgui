@@ -25,7 +25,7 @@ namespace GUI
         void setHidden(bool flag);
         virtual void _draw();
         virtual void draw() = 0;
-        virtual void ontouch(Pos &pos) = 0;
+        virtual void ontouch(TouchEvent &pos) = 0;
         virtual void oninput(InputData &input) = 0;
 
         Pos pos;

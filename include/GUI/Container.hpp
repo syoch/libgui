@@ -14,7 +14,7 @@ namespace GUI
         using Widget::Widget;
         ~Container();
         void draw() override;
-        void ontouch(Pos &pos) override;
+        void ontouch(TouchEvent &pos) override;
         void oninput(InputData &input) override;
         template <typename T, typename... Args>
         T *add(Args... args)
