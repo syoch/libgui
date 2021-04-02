@@ -29,7 +29,8 @@ namespace GUI
         for (auto &&widget : widgets)
         {
             if ((widget->pos.x <= data.pos.x && data.pos.x <= widget->pos.x + widget->size.w) &&
-                (widget->pos.y <= data.pos.y && data.pos.y <= widget->pos.y + widget->size.h))
+                (widget->pos.y <= data.pos.y && data.pos.y <= widget->pos.y + widget->size.h) &&
+                !widget->getHidden())
             {
                 data.pos.x -= widget->pos.x;
                 data.pos.y -= widget->pos.y;
