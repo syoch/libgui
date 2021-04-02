@@ -28,7 +28,7 @@ namespace GUI
     {
         for (auto &&widget : widgets)
         {
-            if ((widget->pos.x <= data.pos.x && data.pos.x <= widget->pos.x + widget->size.w) ||
+            if ((widget->pos.x <= data.pos.x && data.pos.x <= widget->pos.x + widget->size.w) &&
                 (widget->pos.y <= data.pos.y && data.pos.y <= widget->pos.y + widget->size.h))
             {
                 data.pos.x -= widget->pos.x;
