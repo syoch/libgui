@@ -23,6 +23,7 @@ namespace GUI
         virtual ~Widget();
 
         void setHidden(bool flag);
+        bool getHidden();
         virtual void _draw();
         virtual void draw() = 0;
         virtual void ontouch(TouchEvent &pos) = 0;

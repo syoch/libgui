@@ -18,6 +18,10 @@ namespace GUI
     {
         isHidden = flag;
     }
+    bool Widget::getHidden()
+    {
+        return isHidden;
+    }
     void Widget::_draw()
     {
         if (!isHidden)
