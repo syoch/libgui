@@ -21,7 +21,8 @@ namespace GUI
         {
             START,
             MOVE,
-            END
+            END,
+            NONE
         } type;
         int _istouched;
     };
