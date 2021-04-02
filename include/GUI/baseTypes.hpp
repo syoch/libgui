@@ -25,6 +25,9 @@ namespace GUI
             NONE
         } type;
         int _istouched;
+
+        // member for type: MOVE
+        int dx, dy;
     };
 } // namespace GUI
 
