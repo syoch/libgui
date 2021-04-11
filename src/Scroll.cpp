@@ -1,8 +1,9 @@
 #include <GUI/Scroll.hpp>
 #include <GUI/DrawWrapper.hpp>
 
-GUI::Pos GUI::Scroll::conv(GUI::Pos src)
+GUI::Pos &GUI::Scroll::conv(GUI::Pos &src)
 {
+    src = converter(src);
     src.y += yOffset + pos.y;
     src.x += xOffset + pos.x;
 

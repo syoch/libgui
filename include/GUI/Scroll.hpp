@@ -18,7 +18,16 @@ namespace GUI
         void horizontal(int dx);
         void vertical(int dy);
 
-        Pos conv(Pos src);
+        Pos &conv(Pos &src);
+
+        template <typename T, typename... Args>
+        T *add(Args... args)
+        {
+            auto obj = Container::add<T>(args...);
+
+            obj->converter = static_cast<converterT>(std::bind(&GUI::Scroll::conv, this, std::placeholders::_1));
+            return obj;
+        }
 
     private:
         int yOffset;
