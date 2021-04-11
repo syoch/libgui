@@ -8,12 +8,12 @@ namespace GUI
     {
     public:
         using Widget::Widget;
-        void ontouch(Pos &) override;
+        void ontouch(TouchEvent &) override;
         void oninput(InputData &) override;
         void draw() override;
     };
 
-    void Btn::ontouch(Pos &)
+    void Btn::ontouch(TouchEvent &)
     {
         std::wcout << "touched btn" << std::endl;
     }
