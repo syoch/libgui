@@ -15,7 +15,7 @@ GUI::Pos GUI::Scroll::conv(GUI::Pos src)
         src.y = size.h;
     }
 
-    return src;
+    return converter(src);
 }
 void GUI::Scroll::up(int dy)
 {
