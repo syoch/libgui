@@ -3,6 +3,7 @@
 
 GUI::Pos &GUI::Scroll::conv(GUI::Pos &src)
 {
+    src = converter(src);
     src.y += yOffset + pos.y;
     src.x += xOffset + pos.x;
 
@@ -15,7 +16,7 @@ GUI::Pos &GUI::Scroll::conv(GUI::Pos &src)
         src.y = size.h;
     }
 
-    return converter(src);
+    return src;
 }
 void GUI::Scroll::up(int dy)
 {
