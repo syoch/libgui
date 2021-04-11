@@ -18,7 +18,7 @@ namespace GUI
         void horizontal(int dx);
         void vertical(int dy);
 
-        Pos conv(Pos src);
+        Pos &conv(Pos &src);
 
     private:
         int yOffset;
