@@ -33,3 +33,11 @@ void GUI::Scroll::left(int dy)
 {
     yOffset -= dy;
 }
+void GUI::Scroll::horizontal(int dx)
+{
+    xOffset += dx;
+}
+void GUI::Scroll::vertical(int dy)
+{
+    yOffset += dy;
+}

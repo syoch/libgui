@@ -15,6 +15,8 @@ namespace GUI
         void up(int dy);
         void right(int dy);
         void left(int dy);
+        void horizontal(int dx);
+        void vertical(int dy);
 
         Pos conv(Pos src);
 
