@@ -6,12 +6,12 @@ namespace GUI
 {
     namespace render
     {
-        bool begin()
+        bool init()
         {
             std::wcout << "draw begin" << std::endl;
             return true;
         }
-        bool end()
+        bool exit()
         {
             std::wcout << "draw end" << std::endl;
             return true;
