@@ -1,44 +1,27 @@
 #include <GUI/Scroll.hpp>
 #include <GUI/DrawWrapper.hpp>
-
-GUI::Pos &GUI::Scroll::conv(GUI::Pos &src)
-{
-    src = converter(src);
-    src.y += yOffset + pos.y;
-    src.x += xOffset + pos.x;
-
-    if (src.x > size.w)
-    {
-        src.x = size.w;
-    }
-    if (src.y > size.h)
-    {
-        src.y = size.h;
-    }
-
-    return src;
-}
+#include <iostream>
 void GUI::Scroll::up(int dy)
 {
-    yOffset -= dy;
+    pos.y -= dy;
 }
 void GUI::Scroll::down(int dy)
 {
-    yOffset += dy;
+    pos.y += dy;
 }
 void GUI::Scroll::right(int dy)
 {
-    xOffset += dy;
+    pos.x += dy;
 }
 void GUI::Scroll::left(int dy)
 {
-    yOffset -= dy;
+    pos.y -= dy;
 }
 void GUI::Scroll::horizontal(int dx)
 {
-    xOffset += dx;
+    pos.x += dx;
 }
 void GUI::Scroll::vertical(int dy)
 {
-    yOffset += dy;
+    pos.y += dy;
 }
