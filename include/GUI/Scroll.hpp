@@ -30,8 +30,8 @@ namespace GUI
         }
 
     private:
-        int yOffset;
-        int xOffset;
+        int yOffset = 0;
+        int xOffset = 0;
     };
 }
 
