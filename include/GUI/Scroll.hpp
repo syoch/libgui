@@ -11,6 +11,7 @@ namespace GUI
     {
     public:
         using Container::Container;
+        Scroll(int x = 0, int y = 0, int w = 0, int h = 0, bool isHidden = false);
         void down(int dy);
         void up(int dy);
         void right(int dy);
@@ -21,8 +22,8 @@ namespace GUI
         Pos &conv(Pos &src);
 
     private:
-        int yOffset = 0;
-        int xOffset = 0;
+        int yOffset;
+        int xOffset;
     };
 }
 
