@@ -14,6 +14,11 @@ namespace GUI
     Widget::~Widget()
     {
     }
+    void Widget::resize(int w, int h)
+    {
+        this->size.w = w;
+        this->size.h = h;
+    }
     void Widget::setHidden(bool flag)
     {
         isHidden = flag;

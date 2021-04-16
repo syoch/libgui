@@ -22,6 +22,7 @@ namespace GUI
 
         virtual ~Widget();
 
+        void resize(int w, int h);
         void setHidden(bool flag);
         bool getHidden();
         virtual void _draw();
