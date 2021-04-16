@@ -13,9 +13,9 @@ namespace GUI
         void draw() override;
     };
 
-    void Btn::ontouch(TouchEvent &)
+    void Btn::ontouch(TouchEvent &data)
     {
-        std::wcout << "touched btn" << std::endl;
+        std::wcout << "touched " << data.pos.x << " " << data.pos.y << std::endl;
     }
     void Btn::oninput(InputData &)
     {
@@ -23,22 +23,27 @@ namespace GUI
     }
     void Btn::draw()
     {
-        circle((DrawInfo){{0, 0}, 0}, (DrawInfo){{0, 50}, 0});
+        rect2((DrawInfo){{0, 0}, 0}, (DrawInfo){{10, 10}, 0});
     }
 } // namespace GUI
 
 int main(int, char const *[])
 {
+    TouchEvent a = (TouchEvent){(Pos){0, 0}, TouchEvent::START, 0, 0, 0};
     auto mgr = new Manager();
-    mgr->add<Btn>(50, 30, 10, 10, true);
+    auto scl1 = mgr->add<Scroll>(0, 0, 50, 50);
+    scl1->add<Btn>(0, 0, 10, 10);
 
-    auto con1 = mgr->add<Container>(10, 10, 50, 50);
-    con1->add<Btn>(20, 20, 50, 50);
-
-    auto con2 = con1->add<Container>(20, 20, 50, 50);
-    con2->add<Btn>(20, 20, 50, 50);
-
+    a.pos = (Pos){0, 0};
     mgr->draw();
+    mgr->ontouch(a);
+
+    scl1->horizontal(10);
+    scl1->vertical(10);
+
+    a.pos = (Pos){10, 10};
+    mgr->draw();
+    mgr->ontouch(a);
 
     delete mgr;
     return 0;
