@@ -24,6 +24,7 @@ namespace GUI
 
         void resize(int w, int h);
         void move(int x, int y);
+        void move(int x, int y, int w, int h);
         void setHidden(bool flag);
         bool getHidden();
         virtual void _draw();

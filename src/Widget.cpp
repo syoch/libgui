@@ -24,6 +24,13 @@ namespace GUI
         this->pos.x = x;
         this->pos.y = y;
     }
+    void Widget::move(int x, int y, int w, int h)
+    {
+        this->pos.x = x;
+        this->pos.y = y;
+        this->size.w = w;
+        this->size.h = h;
+    }
     void Widget::setHidden(bool flag)
     {
         isHidden = flag;
