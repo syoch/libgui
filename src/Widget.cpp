@@ -19,7 +19,7 @@ namespace GUI
         this->size.w = w;
         this->size.h = h;
     }
-    void Widget::repos(int x, int y)
+    void Widget::move(int x, int y)
     {
         this->pos.x = x;
         this->pos.y = y;
