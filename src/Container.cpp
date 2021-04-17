@@ -36,6 +36,7 @@ namespace GUI
                 data.pos.x -= widget->pos.x;
                 data.pos.y -= widget->pos.y;
                 widget->ontouch(data);
+                break;
             }
         }
     }
