@@ -47,4 +47,8 @@ namespace GUI
             widget->oninput(data);
         }
     }
+    int Container::widgetsCount()
+    {
+        return widgets.size();
+    }
 } // namespace GUI

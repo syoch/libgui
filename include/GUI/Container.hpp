@@ -35,6 +35,7 @@ namespace GUI
         }
 
         Pos &converterForWidget(Pos &);
+        int widgetsCount();
 
     private:
         WidVec widgets;
