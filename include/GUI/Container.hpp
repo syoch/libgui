@@ -37,7 +37,7 @@ namespace GUI
         Pos &converterForWidget(Pos &);
         int widgetsCount();
 
-    private:
+    protected:
         WidVec widgets;
     };
 } // namespace GUI
