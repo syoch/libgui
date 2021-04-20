@@ -39,6 +39,10 @@ namespace GUI
     {
         return isHidden;
     }
+    void Widget::toggleHidden()
+    {
+        isHidden ^= 1;
+    }
     void Widget::_draw()
     {
         if (!isHidden)

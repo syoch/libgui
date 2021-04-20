@@ -27,6 +27,7 @@ namespace GUI
         void move(int x, int y, int w, int h);
         void setHidden(bool flag);
         bool getHidden();
+        void toggleHidden();
         virtual void _draw();
         virtual void draw() = 0;
         virtual void ontouch(TouchEvent &pos) = 0;
